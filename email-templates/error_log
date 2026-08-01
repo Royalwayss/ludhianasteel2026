@@ -1,0 +1,4 @@
+[26-Feb-2026 07:57:15 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/mcxa1ix832ge/public_html/email-templates/test-mail.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/mcxa1ix832ge/public_html/email-templates/test-mail.php on line 23
