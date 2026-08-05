@@ -51,8 +51,8 @@
 							  
                               
                               <td style=""><?php echo $row['country_code'].' '.$row['phone']; ?></td>
-                              
-                              <td><?php echo date('d-m-Y H:i:s',strtotime($row['created_at'])); ?></td>
+                              <!-- H:i:s -->
+                              <td><?php echo date('d-m-Y',strtotime($row['created_at'])); ?></td>
                               <td> 
 							  <?php
 							  if($row['view_status'] == '1'){
