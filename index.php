@@ -146,10 +146,13 @@
                         Company<span class="bg-base-color h-2px bottom-0px separator-animation"></span></span></h2>
                 <p
                     data-anime='{"translateY": [30, 0], "perspective": [400,400], "scale": [1.1, 1], "rotateX": [-80, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                    <strong> Established in 1938, </strong> Ludhiana Steel Rolling Mills (LSRM) anticipated the immense
-                    potential of India’s growing steel industry and built a strong legacy founded on innovation,
-                    integrity, and excellence. Based in Ludhiana, Punjab. The company operates with an annual production
-                    <strong> capacity of 100,000 tons. </strong>
+                     Established in 1938, Ludhiana Steel Rolling Mills (LSRM) is one of India’s leading integrated
+                        manufacturers of carbon, alloy and special steels, with an annual production capacity of 100,000
+                        metric tonnes.
+                </p>
+                <p
+                    data-anime='{"translateY": [30, 0], "perspective": [400,400], "scale": [1.1, 1], "rotateX": [-80, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                    For over 87 years, LSRM has earned the trust of customers through its commitment to quality, innovation and metallurgical excellence. Today, the company operates three manufacturing units spread across 30 acres in Ludhiana, Punjab, delivering premium engineering steel solutions to customers across India and international markets.
                 </p>
                 <!-- <p
                     data-anime='{"el": "lines", "translateY": [30, 0], "perspective": [400,400], "scale": [1.1, 1], "rotateX": [-80, 0], "opacity": [0,1], "duration": 900, "delay": 300, "staggervalue": 400, "easing": "easeOutQuad" }'>
