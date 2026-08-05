@@ -154,11 +154,7 @@
                     data-anime='{"translateY": [30, 0], "perspective": [400,400], "scale": [1.1, 1], "rotateX": [-80, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
                     For over 87 years, LSRM has earned the trust of customers through its commitment to quality, innovation and metallurgical excellence. Today, the company operates three manufacturing units spread across 30 acres in Ludhiana, Punjab, delivering premium engineering steel solutions to customers across India and international markets.
                 </p>
-                <!-- <p
-                    data-anime='{"el": "lines", "translateY": [30, 0], "perspective": [400,400], "scale": [1.1, 1], "rotateX": [-80, 0], "opacity": [0,1], "duration": 900, "delay": 300, "staggervalue": 400, "easing": "easeOutQuad" }'>
-                    Established in 1938, LSRM anticipated the immense potential of India’s growing steel industry and
-                    built a strong legacy of innovation, integrity, and excellence.
-                </p> -->
+               
                 <div class="d-inline-block">
                     <a href="about.php"
                         class="btn btn-large btn-round-edge btn-box-shadow btn-switch-text btn-dark-gray left-icon section-link me-20px">
