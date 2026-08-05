@@ -19,7 +19,7 @@
     <!-- style sheets and font icons  -->
     <link rel="stylesheet" href="css/vendors.min.css" />
     <link rel="stylesheet" href="css/icon.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css?v=1.1" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="demos/ludhiana-steel/style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
