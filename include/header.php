@@ -16,13 +16,17 @@
     <!-- google fonts preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <!-- style sheets and font icons  -->
     <link rel="stylesheet" href="css/vendors.min.css" />
     <link rel="stylesheet" href="css/icon.min.css" />
     <link rel="stylesheet" href="css/style.css?v=1.1" />
+	
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="demos/ludhiana-steel/style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<?php if(isset($extra_css) && !empty($extra_css)) { echo $extra_css; } ?>
+	<style>.lscareer-error{ color:red !important; }</style>
 </head>
 
 <body data-mobile-nav-style="classic">
@@ -67,6 +71,7 @@
                             <li class="nav-item"><a href="infrastructure.php" class="nav-link">Infrastructure</a></li>
                             <li class="nav-item"><a href="csr.php" class="nav-link">Sustainability</a></li>
                             <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
+                            <li class="nav-item"><a href="career.php" class="nav-link">Career</a></li>
 
                         </ul>
                     </div>

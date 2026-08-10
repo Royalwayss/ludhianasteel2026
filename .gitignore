@@ -1,1 +1,4 @@
 db_config.php
+# Ignore uploaded resumes/attachments, but keep the folder in git
+uploads/resumes/*
+!uploads/resumes/.gitkeep

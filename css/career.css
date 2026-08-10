@@ -1,0 +1,462 @@
+/* ============================================================
+   LUDHIANA STEEL — CAREERS PAGE
+   Namespaced: .lscareer-*  |  No :root vars, hex hardcoded
+   Font: Poppins | base 14px / line-height 30px
+   ============================================================ */
+
+.lscareer-scope *{margin:0;padding:0;box-sizing:border-box;}
+
+.lscareer-scope{
+  font-family:'Poppins',sans-serif;
+  font-size:14px;
+  line-height:30px;
+  color:#252523;
+  background:#ffffff;
+  -webkit-font-smoothing:antialiased;
+}
+
+.lscareer-wrap{
+  width:100%;
+  padding:70px 20px 90px;
+}
+.lscareer-container{
+  max-width:1000px;
+  margin:0 auto;
+}
+
+/* ---------- Intro heading ---------- */
+.lscareer-head{
+  text-align:center;
+  margin-bottom:48px;
+}
+.lscareer-title{
+  font-size:clamp(30px,4.4vw,46px);
+  line-height:1.15;
+  font-weight:600;
+  color:#252523;
+  letter-spacing:-0.5px;
+}
+.lscareer-title span{color:#F5821F;}
+.lscareer-sub{
+  font-size:14px;
+  line-height:30px;
+  color:#6a6a6a;
+  max-width:640px;
+  margin:14px auto 0;
+}
+
+/* ---------- Accordion ---------- */
+.lscareer-accordion{
+  border:1px solid #ececec;
+  border-radius:14px;
+  overflow:hidden;
+  background:#ffffff;
+  box-shadow:0 18px 40px -28px rgba(0,0,0,0.18);
+}
+.lscareer-item{
+  border-bottom:1px solid #ececec;
+}
+.lscareer-item:last-child{border-bottom:none;}
+
+.lscareer-header{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  width:100%;
+  padding:22px 26px;
+  background:#ffffff;
+  border:none;
+  cursor:pointer;
+  text-align:left;
+  font-family:inherit;
+  transition:background .25s ease;
+}
+.lscareer-header:hover{background:#fafafa;}
+.lscareer-item.is-open .lscareer-header{background:#F7F7F7;}
+
+.lscareer-pos{
+  flex:1;
+  min-width:0;
+}
+.lscareer-pos-name{
+  font-size:17px;
+  line-height:26px;
+  font-weight:600;
+  color:#252523;
+}
+
+.lscareer-vac{
+  flex-shrink:0;
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  padding:6px 14px;
+  background:#FDEEE0;
+  color:#F5821F;
+  border-radius:30px;
+  font-size:12.5px;
+  line-height:18px;
+  font-weight:600;
+  white-space:nowrap;
+}
+.lscareer-vac b{font-weight:700;}
+
+.lscareer-toggle{
+  flex-shrink:0;
+  width:34px;height:34px;
+  border-radius:50%;
+  border:1px solid #e2e2e2;
+  display:flex;align-items:center;justify-content:center;
+  color:#252523;
+  transition:transform .3s ease,background .25s ease,color .25s ease,border-color .25s ease;
+}
+.lscareer-item.is-open .lscareer-toggle{
+  background:#F5821F;
+  border-color:#F5821F;
+  color:#ffffff;
+  transform:rotate(180deg);
+}
+.lscareer-toggle svg{width:15px;height:15px;}
+
+/* body */
+.lscareer-body{
+  max-height:0;
+  overflow:hidden;
+  transition:max-height .38s ease;
+  background:#F7F7F7;
+}
+.lscareer-body-inner{
+  padding:4px 26px 30px;
+}
+.lscareer-desc{
+  font-size:14px;
+  line-height:30px;
+  color:#555555;
+}
+.lscareer-desc strong{color:#252523;font-weight:600;}
+.lscareer-desc ul{
+  margin:8px 0 0;
+  padding-left:20px;
+}
+.lscareer-desc li{
+  font-size:14px;
+  line-height:30px;
+  color:#555555;
+}
+
+.lscareer-apply{
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  margin-top:20px;
+  padding:11px 26px;
+  background:#F5821F !important;
+  color:#ffffff !important;
+  border:none;
+  border-radius:6px;
+  font-family:inherit;
+  font-size:14px;
+  font-weight:600;
+  line-height:20px;
+  cursor:pointer;
+  transition:background .25s ease,transform .15s ease,box-shadow .25s ease;
+}
+.lscareer-apply:hover{
+  background:#e0720f;
+  box-shadow:0 12px 22px -12px rgba(245,130,31,0.75);
+}
+.lscareer-apply:active{transform:translateY(1px);}
+.lscareer-apply svg{width:15px;height:15px;}
+
+/* ============================================================
+   MODAL — application form (matches reference styling)
+   ============================================================ */
+.lscareer-modal{
+  position:fixed;
+  inset:0;
+  z-index:9999;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+  background:rgba(24,24,24,0.55);
+  opacity:0;
+  visibility:hidden;
+  transition:opacity .3s ease,visibility .3s ease;
+}
+.lscareer-modal.is-active{opacity:1;visibility:visible;}
+
+.lscareer-box{
+  width:100%;
+  max-width:780px;
+  max-height:90vh;
+  overflow-y:auto;
+  background:#F7F7F7;
+  border-radius:16px;
+  padding:40px 42px 44px;
+  position:relative;
+  transform:translateY(24px) scale(.98);
+  transition:transform .32s cubic-bezier(.2,.7,.3,1);
+  box-shadow:0 40px 80px -30px rgba(0,0,0,0.5);
+}
+.lscareer-modal.is-active .lscareer-box{transform:translateY(0) scale(1);}
+
+.lscareer-close{
+  position:absolute;
+  top:18px;right:18px;
+  width:38px;height:38px;
+  border-radius:50%;
+  border:none;
+  background:#ececec;
+  color:#333333;
+  cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  transition:background .2s ease,color .2s ease,transform .2s ease;
+}
+.lscareer-close:hover{background:#F5821F;color:#fff;transform:rotate(90deg);}
+.lscareer-close svg{width:16px;height:16px;}
+
+.lscareer-modal-title{
+  font-size:clamp(24px,3.2vw,34px);
+  line-height:1.2;
+  font-weight:600;
+  color:#252523;
+  letter-spacing:-0.4px;
+  padding-right:40px;
+}
+.lscareer-modal-for{
+  display:block;
+  font-size:13px;
+  line-height:24px;
+  font-weight:500;
+  color:#F5821F;
+  margin-top:2px;
+}
+
+/* form grid */
+.lscareer-form{margin-top:30px;}
+.lscareer-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:26px 34px;
+}
+.lscareer-field.full{grid-column:1 / -1;}
+
+.lscareer-label{
+  display:block;
+  font-size:12px;
+  line-height:20px;
+  font-weight:600;
+  letter-spacing:.6px;
+  text-transform:uppercase;
+  color:#252523;
+  margin-bottom:4px;
+}
+.lscareer-label span{color:#F5821F;}
+
+.lscareer-inputwrap{position:relative;}
+.lscareer-input,
+.lscareer-textarea{
+  width:100%;
+  font-family:inherit;
+  font-size:14px;
+  line-height:30px;
+  color:#252523;
+  background:transparent;
+  border:none;
+  border-bottom:1px solid #d5d5d5;
+  padding:6px 30px 8px 0;
+  transition:border-color .25s ease;
+}
+.lscareer-textarea{
+  resize:vertical;
+  min-height:120px;
+  line-height:28px;
+  border:1px solid #d5d5d5;
+  border-radius:8px;
+  padding:12px 40px 12px 14px;
+  background:#ffffff;
+}
+.lscareer-textarea:focus{border-color:#F5821F;}
+.lscareer-input::placeholder,
+.lscareer-textarea::placeholder{color:#9a9a9a;font-weight:300;}
+.lscareer-input:focus,
+.lscareer-textarea:focus{
+  outline:none;
+  border-bottom-color:#F5821F;
+}
+.lscareer-input[readonly]{color:#252523;font-weight:500;border-bottom-color:#e0e0e0;cursor:default;}
+
+.lscareer-ic{
+  position:absolute;
+  right:2px;top:10px;
+  width:17px;height:17px;
+  color:#b7b7b7;
+  pointer-events:none;
+}
+.lscareer-textarea + .lscareer-ic{top:8px;}
+
+/* file upload */
+.lscareer-file{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  flex-wrap:wrap;
+  padding:16px 18px;
+  background:#ffffff;
+  border:1.5px dashed #d3d3d3;
+  border-radius:10px;
+  cursor:pointer;
+  transition:border-color .25s ease,background .25s ease;
+}
+.lscareer-file:hover{border-color:#F5821F;background:#fffaf4;}
+.lscareer-file.has-file{border-style:solid;border-color:#F5821F;background:#fffaf4;}
+.lscareer-file input{display:none;}
+.lscareer-file-ic{
+  width:42px;height:42px;flex-shrink:0;
+  border-radius:9px;
+  background:#FDEEE0;color:#F5821F;
+  display:flex;align-items:center;justify-content:center;
+}
+.lscareer-file-ic svg{width:20px;height:20px;}
+.lscareer-file-txt{flex:1;min-width:0;}
+.lscareer-file-main{
+  font-size:14px;line-height:22px;font-weight:500;color:#252523;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.lscareer-file-sub{font-size:12px;line-height:18px;color:#8a8a8a;}
+.lscareer-file-btn{
+  flex-shrink:0;
+  font-size:12.5px;font-weight:600;color:#F5821F;
+  padding:7px 16px;border:1px solid #F5821F;border-radius:6px;
+  background:transparent;transition:background .2s ease,color .2s ease;
+}
+.lscareer-file:hover .lscareer-file-btn{background:#F5821F;color:#fff;}
+
+/* footer row */
+.lscareer-formfoot{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  flex-wrap:wrap;
+  margin-top:34px;
+}
+.lscareer-note{
+  font-size:12.5px;line-height:22px;color:#8a8a8a;max-width:360px;
+}
+.lscareer-submit{
+  padding:13px 40px;
+  background:#F5821F !important;
+  color:#ffffff !important;
+  border:none;border-radius:6px;
+  font-family:inherit;font-size:14px;font-weight:600;line-height:20px;
+  cursor:pointer;
+  transition:background .25s ease,transform .15s ease,box-shadow .25s ease;
+}
+.lscareer-submit:hover{background:#e0720f;box-shadow:0 12px 24px -12px rgba(245,130,31,0.8);}
+.lscareer-submit:active{transform:translateY(1px);}
+
+/* success message */
+.lscareer-success{
+  display:none;
+  text-align:center;
+  padding:24px 10px 6px;
+}
+.lscareer-success.show{display:block;}
+.lscareer-success-ic{
+  width:64px;height:64px;margin:0 auto 16px;
+  border-radius:50%;background:#e9f7ee;color:#25a25a;
+  display:flex;align-items:center;justify-content:center;
+}
+.lscareer-success-ic svg{width:30px;height:30px;}
+.lscareer-success h4{font-size:20px;line-height:30px;font-weight:600;color:#252523;}
+.lscareer-success p{font-size:14px;line-height:28px;color:#6a6a6a;margin-top:4px;}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+/* ---- Tablet / small laptop ---- */
+@media (max-width:992px){
+  .lscareer-wrap{padding:58px 18px 74px;}
+  .lscareer-head{margin-bottom:38px;}
+  .lscareer-box{max-width:640px;}
+}
+
+/* ---- Tablet portrait ---- */
+@media (max-width:768px){
+  .lscareer-wrap{padding:48px 16px 64px;}
+  .lscareer-head{margin-bottom:32px;}
+
+  .lscareer-header{padding:18px 18px;gap:12px 14px;flex-wrap:wrap;}
+  .lscareer-pos{order:1;flex:1 1 auto;min-width:0;}
+  .lscareer-toggle{order:2;}
+  .lscareer-vac{order:3;flex-basis:100%;}
+  .lscareer-pos-name{font-size:16px;}
+
+  .lscareer-body-inner{padding:2px 18px 26px;}
+
+  .lscareer-box{padding:32px 20px 34px;max-height:92vh;}
+  .lscareer-modal{padding:16px;}
+  .lscareer-grid{grid-template-columns:1fr;gap:22px;}
+  .lscareer-formfoot{flex-direction:column;align-items:stretch;gap:16px;}
+  .lscareer-note{max-width:none;text-align:center;}
+  .lscareer-submit{width:100%;}
+}
+
+/* ---- Large phone ---- */
+@media (max-width:480px){
+  .lscareer-wrap{padding:40px 13px 54px;}
+  .lscareer-title{font-size:26px;}
+  .lscareer-sub{font-size:13.5px;}
+
+  .lscareer-header{padding:16px 15px;}
+  .lscareer-pos-name{font-size:15.5px;line-height:24px;}
+  .lscareer-vac{font-size:12px;padding:5px 12px;}
+  .lscareer-toggle{width:30px;height:30px;}
+  .lscareer-toggle svg{width:13px;height:13px;}
+
+  .lscareer-body-inner{padding:2px 15px 24px;}
+  .lscareer-apply{width:100%;justify-content:center;margin-top:18px;padding:12px 20px;}
+
+  .lscareer-box{padding:30px 16px 30px;border-radius:12px;}
+  .lscareer-close{top:14px;right:14px;width:34px;height:34px;}
+  .lscareer-modal-title{padding-right:36px;}
+
+  .lscareer-file{gap:12px;padding:14px;}
+  .lscareer-file-ic{width:38px;height:38px;}
+  .lscareer-file-btn{padding:6px 13px;}
+}
+
+/* ---- Small phone (down to 320px) ---- */
+@media (max-width:360px){
+  .lscareer-wrap{padding:34px 11px 48px;}
+  .lscareer-title{font-size:23px;}
+
+  .lscareer-header{padding:14px 13px;gap:10px;}
+  .lscareer-pos-name{font-size:15px;}
+
+  .lscareer-box{padding:28px 13px 28px;}
+  .lscareer-modal{padding:10px;}
+  .lscareer-modal-title{font-size:22px;}
+
+  .lscareer-file{flex-direction:column;align-items:flex-start;text-align:left;}
+  .lscareer-file-btn{width:100%;text-align:center;}
+  .lscareer-submit{padding:13px 20px;}
+}
+
+
+.form-control-color:not(:disabled):not([readonly]), .form-control[type=file]:not(:disabled):not([readonly]), [role=button], [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled), summary {
+    cursor: pointer;
+    text-decoration: none !important;;
+}
+.lscareer-desc li {
+    font-size: 14px;
+    line-height: 30px;
+    color: #555555;
+	list-style-type: disc;
+	margin-bottom: 8px;
+    line-height: 1.6;
+}
+

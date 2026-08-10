@@ -134,8 +134,10 @@ if(!isset($_SESSION['user_id']) || $_SESSION['user_id'] == ''){
               
 			     <li class="">
 			       <a href="contacts.php"></i><span class="nav-label">Contacts</span></a>
-			   </li> 
-               
+			    </li> 
+                <li class="">
+			       <a href="careers.php"></i><span class="nav-label">Careers</span></a>
+			    </li> 
 			
                   
 		 </ul>

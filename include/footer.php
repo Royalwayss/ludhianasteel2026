@@ -117,7 +117,7 @@
      <script async defer src="https://maps.googleapis.com/maps/api/js?key=<YOUR_API_KEY>&callback=initMap"></script>
      <script type="text/javascript" src="js/main.js?v=2.0"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+<?php if(isset($extra_js) && !empty($extra_js)) { echo $extra_js; } ?>
 <script>
 document.getElementById("myBtn").addEventListener("click", function () {
     const hiddenItems = document.querySelectorAll(".infra-hidden");
