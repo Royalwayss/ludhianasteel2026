@@ -141,7 +141,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <link href="https://cdn.jsdelivr.net/npm/quill@1.3.7/dist/quill.snow.css" rel="stylesheet">
       <script src="https://cdn.jsdelivr.net/npm/quill@1.3.7/dist/quill.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
-      <script type="text/javascript">
+      
+   <script type="text/javascript">
          var quill = new Quill('#editor', {
             theme: 'snow',
             placeholder: 'Enter job requirements...',
