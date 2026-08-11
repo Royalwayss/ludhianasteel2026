@@ -251,9 +251,9 @@
 
 				$mail_data = [
 					"fromAddress" => "mis@ludhianasteel.com",
-					"toAddress"   => "info@ludhianasteel.com",
-					"ccAddress"   => "jaspreet@rtpltech.com",
-					"bccAddress"  => "rwpttech@gmail.com",
+					"toAddress"   => "hrd@ludhianasteel.com",
+					"ccAddress"   => "hr2@ludhianasteel.com",
+					"bccAddress"  => "",
 					"subject"     => "Ludhianasteel Career Application | ".date('d-m-Y'),
 					"content"     => $mail_message,
 				];

@@ -341,7 +341,7 @@
 							"fromAddress" => "mis@ludhianasteel.com",
 							"toAddress"   => "info@ludhianasteel.com", 
 							"ccAddress"   => "jaspreet@rtpltech.com",
-							"bccAddress"  => "rwpttech@gmail.com",
+							"bccAddress"  => "",
 							"subject"     => "Ludhianasteel Contact Form | ".date('d-m-Y'),
 							"content"     => $mail_message,
 						];
