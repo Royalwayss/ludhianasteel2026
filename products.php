@@ -17,6 +17,7 @@
         </div>
     </div>
 </section>
+<?php include 'include/breadcrumbs.php'; ?>
 <!-- start section -->
 <section class="bg-light">
     <div class="container">

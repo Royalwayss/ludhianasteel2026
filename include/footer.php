@@ -1,4 +1,4 @@
-     <!-- start footer -->
+<!-- start footer -->
      <footer class="footer-bg">
         
          <div class="container-fluid">
@@ -21,12 +21,12 @@
                  <div class="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-3 mb-5 mt-5" >
                      <span class="alt-font  fs-20 d-block footer-heading mb-10px">Company</span>
                      <ul>
-                         <li><a href="index.php">Home</a></li>
-                         <li><a href="about.php">About us</a></li>
-                         <!-- <li><a href="products.php">Products</a></li> -->
-                          <li><a href="csr.php">Sustainability</a></li>
-                         <li><a href="infrastructure.php">Infrastructure</a></li>
-                         <li><a href="contact.php">Contact us</a></li>
+                         <li><a href="<?php echo BASEURL; ?>">Home</a></li>
+                         <li><a href="<?php echo BASEURL; ?>about.php">About us</a></li>
+                         <!-- <li><a href="<?php echo BASEURL; ?>products.php">Products</a></li> -->
+                          <li><a href="<?php echo BASEURL; ?>csr.php">Sustainability</a></li>
+                         <li><a href="<?php echo BASEURL; ?>infrastructure.php">Infrastructure</a></li>
+                         <li><a href="<?php echo BASEURL; ?>contact.php">Contact us</a></li>
                      </ul>
                  </div>
                  <!-- end footer column -->
@@ -34,9 +34,9 @@
                  <div class="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2 mb-5 mt-5" >
                      <span class="alt-font  fs-20 d-block footer-heading mb-10px">Products</span>
                      <ul>
-                         <!-- <li><a href="products.php">Flat Bars</a></li> -->
-                         <li><a href="products.php">RCS Bars</a></li>
-                         <li><a href="products.php">Round Bars </a></li>
+                         <!-- <li><a href="<?php echo BASEURL; ?>products.php">Flat Bars</a></li> -->
+                         <li><a href="<?php echo BASEURL; ?>products.php">RCS Bars</a></li>
+                         <li><a href="<?php echo BASEURL; ?>products.php">Round Bars </a></li>
 
                      </ul>
                  </div>
@@ -56,20 +56,31 @@
                     </div>
                 
                  
-                     <!-- <div class="ldh-footer-effect egeon">
+                     <div class="ldh-footer-effect egeon">
+                         <style>
+                         .ldh-footer-buttons a,
+                         .ldh-footer-buttons a:hover,
+                         .ldh-footer-buttons a i,
+                         .ldh-footer-buttons a:hover i{
+                             transform: none !important;
+                             -webkit-transform: none !important;
+                             rotate: none !important;
+                             transition: color 0.2s ease, background-color 0.2s ease !important;
+                         }
+                         </style>
                          <div class="ldh-footer-buttons">
-                             <a href="#" class="ldh-footer-fb" title="Join us on Facebook">
+                             <a href="https://www.facebook.com/LSRMofficial" target="_blank" rel="nofollow noopener" class="ldh-footer-fb" title="Join us on Facebook">
                                  <i class="fa-brands fa-facebook"></i>
                              </a>
 
-                             <a href="#" class="ldh-footer-insta" title="Join us on Instagram">
+                             <a href="https://www.instagram.com/lsrmofficial" target="_blank" rel="nofollow noopener" class="ldh-footer-insta" title="Join us on Instagram">
                                  <i class="fa-brands fa-instagram"></i>
                              </a>
-                             <a href="#" class="ldh-footer-in" title="Join us on LinkedIn">
+                             <a href="https://in.linkedin.com/company/lsrmofficial" target="_blank" rel="nofollow noopener" class="ldh-footer-in" title="Join us on LinkedIn">
                                  <i class="fa-brands fa-linkedin"></i>
                              </a>
                          </div>
-                     </div> -->
+                     </div>
                  </div>
                  <!-- end footer column -->
              </div>

@@ -15,6 +15,7 @@
         </div>
     </div>
 </section>
+<?php include 'include/breadcrumbs.php'; ?>
 <!-- start section -->
 <section class=" pt-5 pb-5" style="background-color: #f5f5f5;">
     <div class="container">
