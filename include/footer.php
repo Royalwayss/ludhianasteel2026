@@ -8,7 +8,7 @@
                  <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-5 mt-5" >
                     <div class="text-start  text-lg-center">
                      <a href="" class="footer-logo mb-20px sm-mb-15px d-inline-block"><img
-                             src="./images/lsrm/logo-w-b.png" data-at2x="./images/lsrm/logo-w-b.png" alt=""></a>
+                             src="./images/lsrm/logo-w-b.png" data-at2x="./images/lsrm/logo-w-b.png" alt="Ludhiana Steel Rolling Mills Logo" title="Ludhiana Steel Rolling Mills"></a>
                  
                       <span class="alt-font d-block footer-lsrm-line">Ludhiana Steel Rolling Mills</span>
                       
@@ -27,6 +27,8 @@
                           <li><a href="<?php echo BASEURL; ?>csr.php">Sustainability</a></li>
                          <li><a href="<?php echo BASEURL; ?>infrastructure.php">Infrastructure</a></li>
                          <li><a href="<?php echo BASEURL; ?>contact.php">Contact us</a></li>
+                         <li><a href="<?php echo BASEURL; ?>career.php">Career</a></li>
+						 <li><a href="<?php echo BASEURL; ?>enquiry.php" >Enquiry</a></li>
                      </ul>
                  </div>
                  <!-- end footer column -->
@@ -112,7 +114,7 @@
      <!-- start scroll progress -->
       <div class="whats-app-btn  d-block">
          <a href="https://wa.me/+917717304050" target="_blank" aria-label="WhatsApp" class="whats-app-icon">
-             <img src="images/lsrm/whatsapp.png" alt="WhatsApp">
+             <img src="images/lsrm/whatsapp.png" alt="WhatsApp" title="Chat with us on WhatsApp">
          </a>
 
       </div>

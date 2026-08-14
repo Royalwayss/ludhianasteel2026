@@ -46,8 +46,11 @@
     .enquiry-page .alt{font-size:16px;color:var(--enq-muted)}
     .enquiry-page .alt a{color:var(--enq-navy);font-weight:600;text-decoration:none}
     .enquiry-page .alt a:hover{color:var(--enq-accent)}
-    .enquiry-page .form-error{background:#fdecea;border:1px solid #f3b7ae;color:#8a2c22;padding:14px 16px;margin-bottom:20px;font-size:14px}
-    .enquiry-page label.error{
+    .enquiry-page .form-error{ background:#fdecea;border:1px solid #f3b7ae;color:#8a2c22;padding:14px 16px;margin-bottom:20px;font-size:14px}
+    .enquiry-page .form-results{padding:14px 16px;font-size:14px;border-radius:4px}
+	.enquiry-page .form-results.alert-success{background:#e6f4ea;border:1px solid #a3d9b1;color:#1e6b3c}
+	.enquiry-page .form-results.alert-danger{background:#fdecea;border:1px solid #f3b7ae;color:#8a2c22}
+	.enquiry-page label.error{
         display:block;
         text-transform:none;
         letter-spacing:0;

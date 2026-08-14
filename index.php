@@ -169,7 +169,7 @@
             <div class="col-12 col-md-12 col-lg-5 col-xl-5 "
                 data-anime='{ "el": "childs", "translateY": [100, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
                 <figure class="position-relative m-0">
-                    <img class="border-radius-15px w-100 " src="./images/lsrm/about-page-3.jpg" alt="">
+                    <img class="border-radius-15px w-100 " src="./images/lsrm/about-page-3.jpg" alt="Ludhiana Steel Rolling Mills Facility" title="Ludhiana Steel Rolling Mills Facility">
                     <figcaption
                         class="position-absolute text-center border-radius-15px right-30px bottom-30px ps-30px pe-30px blur-box bg-white-transparent">
                         <h2 class="fs-30 mx-auto mb-0 fw-600 text-dark-gray mt-10px mb-10px">Since 1938</h2>
@@ -351,7 +351,7 @@
             <div class="col-12 col-sm-6 col-md-6 col-lg-4 m-auto">
                 <a href="products.php">
                     <div class="product-img">
-                        <img src="images/lsrm/round-bar-product.jpg">
+                        <img src="images/lsrm/round-bar-product.jpg" alt="Round Bars" title="Round Bars">
                     </div>
                     <div class="product-name text-center py-3">
                         <h3>Round Bars</h3>
@@ -361,7 +361,7 @@
             <div class="col-12 col-sm-6 col-md-6 col-lg-4 m-auto">
                 <a href="products.php">
                     <div class="product-img">
-                        <img src="images/lsrm/rcs-product.jpg">
+                        <img src="images/lsrm/rcs-product.jpg" alt="RCS Bars" title="RCS Bars">
                     </div>
                     <div class="product-name text-center py-3">
                         <h3>RCS Bars</h3>
@@ -476,7 +476,7 @@
             <div class="col-12 col-sm-6 col-lg-4 mb-4 infra-home-design">
                 <div class="card border-0 border-radius-4px box-shadow-quadruple-large h-100">
                     <div class="project-box position-relative overflow-hidden">
-                        <img src="images/lsrm/infra/infra-1.jpg" class="img-fluid w-100" alt="Steel Melt Shop">
+                        <img src="images/lsrm/infra/infra-1.jpg" class="img-fluid w-100" alt="Steel Melt Shop" title="Steel Melt Shop">
                         <div class="overlay d-flex flex-column justify-content-center align-items-center"></div>
                     </div>
                     <div class="card-body p-13 md-p-11">
@@ -499,7 +499,7 @@
             <div class="col-12 col-sm-6 col-lg-4 mb-4 infra-home-design">
                 <div class="card border-0 border-radius-4px box-shadow-quadruple-large h-100">
                     <div class="project-box position-relative overflow-hidden">
-                        <img src="images/lsrm/infra/infra-2.1.jpg" class="img-fluid w-100" alt="Rolling Mills">
+                        <img src="images/lsrm/infra/infra-2.1.jpg" class="img-fluid w-100" alt="Rolling Mills" title="Rolling Mills">
                         <div class="overlay d-flex flex-column justify-content-center align-items-center"></div>
                     </div>
                     <div class="card-body p-13 md-p-11">
@@ -522,7 +522,7 @@
             <div class="col-12 col-sm-6 col-lg-4 mb-4 infra-home-design">
                 <div class="card border-0 border-radius-4px box-shadow-quadruple-large h-100">
                     <div class="project-box position-relative overflow-hidden">
-                        <img src="images/lsrm/infra/infra-3.3.jpg" class="img-fluid w-100" alt="Heat Treatment">
+                        <img src="images/lsrm/infra/infra-3.3.jpg" class="img-fluid w-100" alt="Heat Treatment" title="Finishing & Heat Treatment">
                         <div class="overlay d-flex flex-column justify-content-center align-items-center"></div>
                     </div>
                     <div class="card-body p-13 md-p-11">
@@ -560,7 +560,7 @@
 
             <div class="col">
                 <div class="project-box-app position-relative overflow-hidden">
-                    <img src="images/lsrm/app-1.png" class="img-fluid w-100">
+                    <img src="images/lsrm/app-1.png" class="img-fluid w-100" alt="Tractors" title="Tractors">
                     <div class="overlay d-flex flex-column justify-content-center align-items-center">
                         <p class="project-box-app-heading text-white ">Tractors</p>
                     </div>
@@ -568,7 +568,7 @@
             </div>
             <div class="col">
                 <div class="project-box-app position-relative overflow-hidden">
-                    <img src="images/lsrm/app-2.png" class="img-fluid w-100">
+                    <img src="images/lsrm/app-2.png" class="img-fluid w-100" alt="Earth Moving Equipments" title="Earth Moving Equipments">
                     <div class="overlay d-flex flex-column justify-content-center align-items-center">
                         <p class="project-box-app-heading text-white">Earth Moving Equipments</p>
                     </div>
@@ -576,7 +576,7 @@
             </div>
             <div class="col">
                 <div class="project-box-app position-relative overflow-hidden">
-                    <img src="images/lsrm/app-3.png" class="img-fluid w-100">
+                    <img src="images/lsrm/app-3.png" class="img-fluid w-100" alt="Defence" title="Defence">
                     <div class="overlay d-flex flex-column justify-content-center align-items-center">
                         <p class="project-box-app-heading text-white">Defence</p>
                     </div>
@@ -584,7 +584,7 @@
             </div>
             <div class="col">
                 <div class="project-box-app position-relative overflow-hidden">
-                    <img src="images/lsrm/app-4.png" class="img-fluid w-100">
+                    <img src="images/lsrm/app-4.png" class="img-fluid w-100" alt="Nuts Bolt & Fastners" title="Nuts Bolt & Fastners">
                     <div class="overlay d-flex flex-column justify-content-center align-items-center">
                         <p class="project-box-app-heading text-white">Nuts Bolt & Fastners</p>
                     </div>
@@ -592,7 +592,7 @@
             </div>
             <div class="col">
                 <div class="project-box-app position-relative overflow-hidden">
-                    <img src="images/lsrm/app-5.png" class="img-fluid w-100">
+                    <img src="images/lsrm/app-5.png" class="img-fluid w-100" alt="Railways" title="Railways">
                     <div class="overlay d-flex flex-column justify-content-center align-items-center">
                         <p class="project-box-app-heading text-white">Railways</p>
                     </div>
@@ -600,7 +600,7 @@
             </div>
             <div class="col">
                 <div class="project-box-app position-relative overflow-hidden">
-                    <img src="images/lsrm/app-6.png" class="img-fluid w-100">
+                    <img src="images/lsrm/app-6.png" class="img-fluid w-100" alt="Electric Motors" title="Electric Motors">
                     <div class="overlay d-flex flex-column justify-content-center align-items-center">
                         <p class="project-box-app-heading text-white">Electric Motors</p>
                     </div>
@@ -608,7 +608,7 @@
             </div>
             <div class="col">
                 <div class="project-box-app position-relative overflow-hidden">
-                    <img src="images/lsrm/app-8.png" class="img-fluid w-100">
+                    <img src="images/lsrm/app-8.png" class="img-fluid w-100" alt="Oil & Gas" title="Oil & Gas">
                     <div class="overlay d-flex flex-column justify-content-center align-items-center">
                         <p class="project-box-app-heading text-white">Oil & Gas</p>
                     </div>
@@ -616,7 +616,7 @@
             </div>
             <div class="col">
                 <div class="project-box-app position-relative overflow-hidden">
-                    <img src="images/lsrm/app-9.png" class="img-fluid w-100">
+                    <img src="images/lsrm/app-9.png" class="img-fluid w-100" alt="Engineering Industry" title="Engineering Industry">
                     <div class="overlay d-flex flex-column justify-content-center align-items-center">
                         <p class="project-box-app-heading text-white">Engineering Industry</p>
                     </div>
@@ -624,7 +624,7 @@
             </div>
             <div class="col">
                 <div class="project-box-app position-relative overflow-hidden">
-                    <img src="images/lsrm/app-10.png" class="img-fluid w-100">
+                    <img src="images/lsrm/app-10.png" class="img-fluid w-100" alt="Automobile" title="Automobile">
                     <div class="overlay d-flex flex-column justify-content-center align-items-center">
                         <p class="project-box-app-heading text-white">Automobile</p>
                     </div>
@@ -632,7 +632,7 @@
             </div>
             <div class="col">
                 <div class="project-box-app position-relative overflow-hidden">
-                    <img src="images/lsrm/app-7.png" class="img-fluid w-100">
+                    <img src="images/lsrm/app-7.png" class="img-fluid w-100" alt="Hand Tools" title="Hand Tools">
                     <div class="overlay d-flex flex-column justify-content-center align-items-center">
                         <p class="project-box-app-heading text-white">Hand Tools</p>
                     </div>

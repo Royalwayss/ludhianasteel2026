@@ -488,8 +488,8 @@ EOT;
     <link rel="stylesheet" href="css/vendors.min.css" />
     <link rel="stylesheet" href="css/icon.min.css" />
     <link rel="stylesheet" href="css/style.css?v=1.1" />
-	<?php if ($current_page === 'enquiry.php'){ ?>
-	<link rel="stylesheet" href="css/enquiry.css?v=2.0" />
+	<?php if ($current_page === 'enquiry.php' ){ ?>
+	<link rel="stylesheet" href="css/enquiry.css?v=2.2" />
 	<?php } ?>
     <link rel="stylesheet" href="css/responsive.css" />
 	
@@ -498,7 +498,18 @@ EOT;
     <link rel="stylesheet" href="demos/ludhiana-steel/style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<?php if(isset($extra_css) && !empty($extra_css)) { echo $extra_css; } ?>
-	<style>.lscareer-error{ color:red !important; }</style>
+	<style>.lscareer-error{ color:red !important; }
+	.navbar .navbar-nav .nav-link{
+		padding: 55px 14px;
+		font-size: 16px;
+	}
+	@media (max-width: 1399px){
+		.navbar .navbar-nav .nav-link{
+			padding: 55px 10px;
+			font-size: 15px;
+		}
+	}
+	</style>
 </head>
 
 <body data-mobile-nav-style="classic">
@@ -512,11 +523,11 @@ EOT;
             <div class="container mobile-new-width">
                 <div class="col-auto col-lg-2 me-lg-0 me-auto mobile-new-width-logo">
                     <a class="navbar-brand" href="<?php echo BASEURL; ?>">
-                        <img style="min-height:110px;" src="./images/lsrm/logo-w-b.png" data-at2x="./images/lsrm/logo-w-b.png" alt=""
+                        <img style="min-height:110px;" src="./images/lsrm/logo-w-b.png" data-at2x="./images/lsrm/logo-w-b.png" alt="Ludhiana Steel Rolling Mills Logo" title="Ludhiana Steel Rolling Mills"
                             class="default-logo">
-                        <img src="./images/lsrm/logo-remove.png" data-at2x="./images/lsrm/logo-remove.png" alt=""
+                        <img src="./images/lsrm/logo-remove.png" data-at2x="./images/lsrm/logo-remove.png" alt="Ludhiana Steel Rolling Mills Logo" title="Ludhiana Steel Rolling Mills"
                             class="alt-logo">
-                        <img src="./images/lsrm/logo-remove.png" data-at2x="./images/lsrm/logo-remove.png" alt=""
+                        <img src="./images/lsrm/logo-remove.png" data-at2x="./images/lsrm/logo-remove.png" alt="Ludhiana Steel Rolling Mills Logo" title="Ludhiana Steel Rolling Mills"
                             class="mobile-logo">
                     </a>
                 </div>
@@ -542,8 +553,10 @@ EOT;
                             <li class="nav-item"><a href="products.php" class="nav-link">Products</a></li>
                             <li class="nav-item"><a href="infrastructure.php" class="nav-link">Infrastructure</a></li>
                             <li class="nav-item"><a href="csr.php" class="nav-link">Sustainability</a></li>
+                            
                             <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
                             <li class="nav-item"><a href="career.php" class="nav-link">Career</a></li>
+							<li class="nav-item"><a href="enquiry.php" class="nav-link">Enquiry</a></li>
 
                         </ul>
                     </div>
@@ -566,7 +579,10 @@ EOT;
                                     <li class="nav-item"><a href="infrastructure.php"
                                             class="nav-link">Infrastructure</a></li>
                                     <li class="nav-item"><a href="csr.php" class="nav-link">Sustainability</a></li>
+                                    
                                     <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
+                                    <li class="nav-item"><a href="career.php" class="nav-link">Career</a></li>
+									<li class="nav-item"><a href="enquiry.php" class="nav-link">Enquiry</a></li>
                                 </ul>
                             </div>
 

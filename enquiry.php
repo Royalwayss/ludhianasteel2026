@@ -11,7 +11,7 @@
 
 <section class="enquiry-hero">
     <div class="container">
-        <h1>Enquiry</h1>
+        <h1></h1>
     </div>
 </section>
 <?php require_once('include/breadcrumbs.php'); ?>
@@ -273,13 +273,8 @@ $(function () {
                     }
 
                     if (result.alert.indexOf('success') !== -1) {
-                        formObj.find('input[type=text],input[type=email],input[type=tel],input[type=date],input[type=file],textarea').each(function () {
-                            $(this).val('');
-                        });
-                        formObj.find('input[type=checkbox]').prop('checked', false);
-                        formObj.find('select').prop('selectedIndex', 0);
-                        grecaptcha.reset();
-                        $('#hidden-grecaptcha').val('');
+                        window.location.href = 'thanks.php';
+                        return;
                     }
 
                     resultsObj.removeClass('alert-success').removeClass('alert-danger').hide();
