@@ -556,7 +556,7 @@ EOT;
                             
                             <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
                             <li class="nav-item"><a href="career.php" class="nav-link">Career</a></li>
-							<li class="nav-item"><a href="enquiry.php" class="nav-link">Enquiry</a></li>
+							<?php /* <li class="nav-item"><a href="enquiry.php" class="nav-link">Enquiry</a></li> */ ?>
 
                         </ul>
                     </div>

@@ -28,7 +28,7 @@
                          <li><a href="<?php echo BASEURL; ?>infrastructure.php">Infrastructure</a></li>
                          <li><a href="<?php echo BASEURL; ?>contact.php">Contact us</a></li>
                          <li><a href="<?php echo BASEURL; ?>career.php">Career</a></li>
-						 <li><a href="<?php echo BASEURL; ?>enquiry.php" >Enquiry</a></li>
+						<?php /* <li><a href="<?php echo BASEURL; ?>enquiry.php" >Enquiry</a></li> */ ?>
                      </ul>
                  </div>
                  <!-- end footer column -->

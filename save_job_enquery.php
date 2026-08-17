@@ -220,7 +220,7 @@
 		   </body>
 		</html>
 		';
-
+        /*
 		try{
 			// 1. YOUR CREDENTIALS
 			$refresh_token = '1000.5120537a18efa38ae22987160d4e50d0.cae3b8064f06e7f208cce2593e121866';
@@ -274,7 +274,7 @@
 
 		catch(Exception $e) {
 			// silent fail — application is already saved to the DB either way
-		}
+		} */
 
 		echo '{ "alert": "alert alert-success alert-dismissable", "message": "Your application has been submitted successfully!" }';
 

@@ -303,7 +303,7 @@
 				
 				
 				
-				
+				/*
 				
 			     
 			        try{
@@ -361,11 +361,11 @@
 					
 					catch(Exception $e) {
 							//echo 'Message: ' .$e->getMessage();
-					}
+					} */
 			  
 			       echo '{ "alert": "alert alert-success alert-dismissable", "message": "Your message has been sent successfully!" }';
 			  
-			  
+			    
 	}else{
 		echo '{ "alert": "alert alert-danger alert-dismissable", "message": "Your message could not been sent!" }';
 	}
