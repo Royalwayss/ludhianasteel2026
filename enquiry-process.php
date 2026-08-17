@@ -316,7 +316,7 @@
 					"fromAddress" => "mis@ludhianasteel.com",
 					"toAddress"   => "sales@ludhianasteel.com",
 					"ccAddress"   => "info@ludhianasteel.com",
-					"bccAddress"  => "",
+					"bccAddress"  => "manjit@rtpltech.com",
 					"subject"     => "Ludhianasteel Enquiry Form | " . date('d-m-Y'),
 					"content"     => $mail_message,
 				];
