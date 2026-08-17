@@ -49,7 +49,7 @@
 		
 		
 		
-		if($_SERVER['HTTP_HOST'] != 'localhost'){
+	/*	if($_SERVER['HTTP_HOST'] != 'localhost'){
 			
 					$recaptcha_secret = RECAPTCHA_SECRET_KEY;
 					$recaptcha_response = $_POST['g-recaptcha-response'];
@@ -76,8 +76,8 @@
 					} else { 
 					  echo '{ "alert": "alert alert-danger alert-dismissable", "message": "Your message could not been sent!" }'; die;
 					} 
-			   
-   }
+			    
+   } */
 		
 		
 		

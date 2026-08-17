@@ -46,7 +46,7 @@
 
 	if ($err == '') {
 
-		if ($_SERVER['HTTP_HOST'] != 'localhost') {
+		/* if ($_SERVER['HTTP_HOST'] != 'localhost') {
 
 			$recaptcha_secret   = RECAPTCHA_SECRET_KEY;
 			$recaptcha_response = $_POST['g-recaptcha-response'];
@@ -74,7 +74,7 @@
 				echo '{ "alert": "alert alert-danger alert-dismissable", "message": "Your enquiry could not been sent!" }';
 				die;
 			}
-		}
+		} */ 
 
 		// ---- Handle attachment upload (optional) ----
 		$attachment_name = '';
