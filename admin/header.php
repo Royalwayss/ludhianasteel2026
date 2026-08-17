@@ -141,6 +141,9 @@ if(!isset($_SESSION['user_id']) || $_SESSION['user_id'] == ''){
 			 <li class="">
 			       <a href="career_applications.php"></i><span class="nav-label">Career Applications</span></a>
 			    </li> 
+				 <li class="">
+			       <a href="enquiries.php"></i><span class="nav-label">Enquiries</span></a>
+			  </li> 
                   
 		 </ul>
 
