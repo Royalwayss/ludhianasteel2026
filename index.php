@@ -645,4 +645,171 @@
 </section>
 
 
+<section class="lsrm-steel-info py-5 bg-white">
+    
+    <div class="container">
+
+        <div class="mb-5">
+            <span class="lsrm-eyebrow">Alloy Steel &amp; Carbon Steel Manufacturer in India</span>
+            <h2 class="lsrm-heading">Engineering Steel Built for <span class="lsrm-highlight">Demanding Applications</span></h2>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-lg-9">
+                <p>
+                    At Ludhiana Steel Rolling Mills, we manufacture and supply alloy steel and carbon steel round bars
+                    for forging, machining and critical component manufacturing. With integrated steelmaking, rolling,
+                    finishing, heat treatment and testing capabilities, we provide engineering steel designed to
+                    deliver consistent chemistry, cleanliness, dimensional accuracy and reliable performance.
+                </p>
+                <p class="mb-0">
+                    Our product range includes alloy steel round bars, carbon steel round bars, RCS bars and peeled
+                    bars, manufactured to meet the requirements of demanding industrial applications.
+                </p>
+            </div>
+        </div>
+
+        <div class="mb-5">
+            <h3 class="lsrm-subheading">Engineering Steel for Critical Manufacturing Applications</h3>
+            <p>We supply engineering steel to manufacturers and industrial customers across sectors including:</p>
+
+            <div class="row g-4 mt-1">
+                <div class="col-md-6 col-lg-4">
+                    <div class="lsrm-app-card">
+                        <h4>Automotive &amp; Auto Components</h4>
+                        <p>Steel for axles, shafts, gears, transmission components and other forged and machined parts.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="lsrm-app-card">
+                        <h4>Fasteners &amp; General Engineering</h4>
+                        <p>Carbon and alloy steel round bars for nuts, bolts and precision-engineered components.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="lsrm-app-card">
+                        <h4>Agricultural Equipment</h4>
+                        <p>Steel for tractor components, agricultural implements and heavy-duty machinery parts.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="lsrm-app-card">
+                        <h4>Forging Industry</h4>
+                        <p>Forging-quality alloy steel bars and RCS sections for critical applications.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="lsrm-app-card">
+                        <h4>Bearings, Railways &amp; Heavy Engineering</h4>
+                        <p>Application-specific engineering steel grades for demanding service conditions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-5">
+            <h3 class="lsrm-subheading">Carbon Steel, Alloy Steel &amp; Special Steel Grades</h3>
+            <p>Our manufacturing range covers a wide selection of engineering steel grades, including:</p>
+
+            <div class="lsrm-grade-chips">
+                <span class="lsrm-grade-chip">SAE 1018</span>
+                <span class="lsrm-grade-chip">EN8</span>
+                <span class="lsrm-grade-chip">C45</span>
+                <span class="lsrm-grade-chip">S355J2</span>
+                <span class="lsrm-grade-chip">ST52-3</span>
+                <span class="lsrm-grade-chip">20MnCr5</span>
+                <span class="lsrm-grade-chip">EN18</span>
+                <span class="lsrm-grade-chip">SAE 4140</span>
+                <span class="lsrm-grade-chip">EN19</span>
+                <span class="lsrm-grade-chip">42CrMo4</span>
+                <span class="lsrm-grade-chip">EN24</span>
+                <span class="lsrm-grade-chip">SAE 8620</span>
+                <span class="lsrm-grade-chip">SAE 4340</span>
+                <span class="lsrm-grade-chip">EN36</span>
+                <span class="lsrm-grade-chip">EN353</span>
+                <span class="lsrm-grade-chip">17CrNiMo6</span>
+                <span class="lsrm-grade-chip">34CrNiMo6</span>
+                <span class="lsrm-grade-chip">EN30B</span>
+                <span class="lsrm-grade-chip">EN16</span>
+                <span class="lsrm-grade-chip">EN31</span>
+                <span class="lsrm-grade-chip">H13</span>
+            </div>
+
+            <p class="mb-0">
+                We can also discuss specific grade, chemistry, size and application requirements with customers to
+                develop the appropriate steel solution.
+            </p>
+        </div>
+
+        <div class="mb-5">
+            <h3 class="lsrm-subheading">Integrated Steel Manufacturing Process</h3>
+
+            <div class="lsrm-process-flow">
+                <span class="lsrm-process-step">Steel Melting</span>
+                <span class="lsrm-process-arrow">&#8594;</span>
+                <span class="lsrm-process-step">Ladle Refining</span>
+                <span class="lsrm-process-arrow">&#8594;</span>
+                <span class="lsrm-process-step">Vacuum Degassing</span>
+                <span class="lsrm-process-arrow">&#8594;</span>
+                <span class="lsrm-process-step">Billet Casting</span>
+                <span class="lsrm-process-arrow">&#8594;</span>
+                <span class="lsrm-process-step">Precision Rolling</span>
+                <span class="lsrm-process-arrow">&#8594;</span>
+                <span class="lsrm-process-step">Finishing / Heat Treatment</span>
+                <span class="lsrm-process-arrow">&#8594;</span>
+                <span class="lsrm-process-step">Inspection &amp; Testing</span>
+            </div>
+
+            <p>
+                Our integrated manufacturing process provides greater control over the steelmaking and processing
+                route &mdash; from molten steel to finished bar.
+            </p>
+
+            <p class="mb-3">This helps us maintain control over:</p>
+
+            <ul class="lsrm-quality-list">
+                <li>Chemical composition and metallurgy</li>
+                <li>Steel cleanliness</li>
+                <li>Internal quality</li>
+                <li>Dimensional consistency</li>
+                <li>Surface quality</li>
+                <li>Mechanical properties</li>
+                <li>Heat treatment condition</li>
+                <li>Inspection and testing requirements</li>
+            </ul>
+        </div>
+
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-9">
+                <h3 class="lsrm-subheading">Alloy Steel Round Bars &amp; Engineering Steel You Can Depend On</h3>
+                <p>
+                    For manufacturers, the quality of the finished component begins with the quality of its raw
+                    material.
+                </p>
+                <p class="mb-0">
+                    Whether you are looking for an alloy steel round bar manufacturer in India, carbon steel round
+                    bar supplier, peeled bar manufacturer, RCS bar supplier or forging steel manufacturer, Ludhiana
+                    Steel Rolling Mills focuses on delivering consistent and application-oriented steel solutions.
+                    Our approach combines controlled metallurgy, integrated manufacturing, process discipline and
+                    quality inspection to provide steel that performs reliably through forging, machining, heat
+                    treatment and final component manufacturing.
+                </p>
+            </div>
+        </div>
+
+        <div class="lsrm-cta-box">
+            <h3>Looking for a Specific Grade, Size or Section?</h3>
+            <p>
+                Tell us your steel grade, required chemistry, size, quantity and application. Our team can discuss
+                the appropriate material and manufacturing route for your requirement.
+            </p>
+            <p class="lsrm-cta-strong mb-0">
+                Talk to Ludhiana Steel Rolling Mills for your engineering steel requirements.
+            </p>
+            <a href="contact.php" class="lsrm-btn">Contact Us</a>
+        </div>
+
+    </div>
+</section>
+
 <?php include 'include/footer.php'; ?>
