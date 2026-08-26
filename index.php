@@ -655,7 +655,7 @@
         </div>
 
         <div class="row mb-5">
-            <div class="col-lg-9">
+            <div class="col-lg-12">
                 <p>
                     At Ludhiana Steel Rolling Mills, we manufacture and supply alloy steel and carbon steel round bars
                     for forging, machining and critical component manufacturing. With integrated steelmaking, rolling,
