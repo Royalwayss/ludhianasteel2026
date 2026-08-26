@@ -494,7 +494,7 @@ EOT;
     <link rel="stylesheet" href="css/responsive.css" />
 	
 	
-    <link rel="stylesheet" href="css/dev.css?v=2.1" />
+    <link rel="stylesheet" href="css/dev.css?v=2.2" />
     <link rel="stylesheet" href="demos/ludhiana-steel/style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<?php if(isset($extra_css) && !empty($extra_css)) { echo $extra_css; } ?>
