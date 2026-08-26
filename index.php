@@ -780,7 +780,7 @@
         </div>
 
         <div class="row justify-content-center mb-5">
-            <div class="col-lg-9">
+            <div class="col-lg-12">
                 <h3 class="lsrm-subheading">Alloy Steel Round Bars &amp; Engineering Steel You Can Depend On</h3>
                 <p>
                     For manufacturers, the quality of the finished component begins with the quality of its raw
