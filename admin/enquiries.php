@@ -31,8 +31,23 @@
                               <th>Phone</th>
                               <th>Product Form</th>
                               <th>Enquiry Type</th>
+                              <th>Steel Grade</th>
+                              <th>Size</th>
+                              <th>Quantity</th>
+                              <th>Supply Condition</th>
+                              <th>Frequency</th>
+                              <th>Required By</th>
+                              <th>Component</th>
+                              <th>Specification</th>
+                              <th>Delivery Location</th>
+                              <th>Attachment</th>
+                              <th>Message</th>
+                              <th>Designation</th>
+                              <th>Industry</th>
+                              <th>City</th>
+                              <th>Country</th>
                               <th>Date</th>
-                              <th>View</th>
+                              <th class="no-export">View</th>
                            </tr>
                         </thead>
                         <tbody>
@@ -53,9 +68,23 @@
                               <td style=""><?php echo $row['phone']; ?></td>
                               <td style=""><?php echo $row['form_type']; ?></td>
                               <td style=""><?php echo ucfirst($row['enquiry_type']); ?></td>
-                              <!-- H:i:s -->
-                              <td><?php echo date('d-m-Y',strtotime($row['created_at'])); ?></td>
-                              <td> 
+                              <td style=""><?php echo $row['grade'] != '' ? $row['grade'] : '-'; ?></td>
+                              <td style=""><?php echo $row['size']; ?></td>
+                              <td style=""><?php echo trim($row['qty'].' '.$row['qty_unit']); ?></td>
+                              <td style=""><?php echo $row['supply_condition'] != '' ? $row['supply_condition'] : '-'; ?></td>
+                              <td style=""><?php echo $row['frequency'] != '' ? $row['frequency'] : '-'; ?></td>
+                              <td style=""><?php echo $row['required_by'] != '' ? date('d-m-Y', strtotime($row['required_by'])) : '-'; ?></td>
+                              <td style=""><?php echo $row['application']; ?></td>
+                              <td style=""><?php echo $row['spec'] != '' ? $row['spec'] : '-'; ?></td>
+                              <td style=""><?php echo $row['delivery'] != '' ? $row['delivery'] : '-'; ?></td>
+                              <td style=""><?php echo !empty($row['attachment']) ? BASEURL.'uploads/enquiry/'.$row['attachment'] : '-'; ?></td>
+                              <td style=""><?php echo $row['comment'] != '' ? $row['comment'] : '-'; ?></td>
+                              <td style=""><?php echo $row['designation'] != '' ? $row['designation'] : '-'; ?></td>
+                              <td style=""><?php echo $row['industry'] != '' ? $row['industry'] : '-'; ?></td>
+                              <td style=""><?php echo $row['city'] != '' ? $row['city'] : '-'; ?></td>
+                              <td style=""><?php echo $row['country'] != '' ? $row['country'] : '-'; ?></td>
+                              <td><?php echo date('d-m-Y H:i:s',strtotime($row['created_at'])); ?></td>
+                              <td class="no-export"> 
 							  <?php
 							  if($row['view_status'] == '1'){
 							     $view_btn_class = 'btn btn-success';
@@ -131,6 +160,9 @@
                  fixedHeader: true,
                  responsive: true,
                  dom: '<"html5buttons"B>lTfgitp',
+                 columnDefs: [
+                    { targets: [7,8,9,10,11,12,13,14,15,16,17,18,19,20,21], visible: false }
+                 ],
                  buttons: [
          
                 /*  'copyHtml5',
@@ -139,9 +171,15 @@
          
                    'csvHtml5',  */
          
-                   'print',
+                   {
+                      extend: 'print',
+                      exportOptions: { columns: ':not(.no-export)' }
+                   },
          
-                   'excelHtml5'
+                   {
+                      extend: 'excelHtml5',
+                      exportOptions: { columns: ':not(.no-export)' }
+                   }
          
                  ],
          

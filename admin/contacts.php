@@ -29,9 +29,10 @@
                               <th>Name</th>
 							  <th>Email</th>
                               <th>Phone</th>
-                              
+                              <th>Company</th>
+                              <th>Message</th>
                               <th>Date</th>
-                              <th>View</th>
+                              <th class="no-export">View</th>
                            </tr>
                         </thead>
                         <tbody>
@@ -51,9 +52,10 @@
 							  
                               
                               <td style=""><?php echo $row['country_code'].' '.$row['phone']; ?></td>
-                              <!-- H:i:s -->
-                              <td><?php echo date('d-m-Y',strtotime($row['created_at'])); ?></td>
-                              <td> 
+                              <td style=""><?php echo $row['company']; ?></td>
+                              <td style=""><?php echo $row['comment']; ?></td>
+                              <td><?php echo date('d-m-Y H:i:s',strtotime($row['created_at'])); ?></td>
+                              <td class="no-export"> 
 							  <?php
 							  if($row['view_status'] == '1'){
 							     $view_btn_class = 'btn btn-success';
@@ -129,6 +131,9 @@
                  fixedHeader: true,
                  responsive: true,
                  dom: '<"html5buttons"B>lTfgitp',
+                 columnDefs: [
+                    { targets: [4, 5], visible: false }
+                 ],
                  buttons: [
          
                 /*  'copyHtml5',
@@ -137,9 +142,15 @@
          
                    'csvHtml5',  */
          
-                   'print',
+                   {
+                     extend: 'print',
+                     exportOptions: { columns: ':not(.no-export)' }
+                   },
          
-                   'excelHtml5'
+                   {
+                     extend: 'excelHtml5',
+                     exportOptions: { columns: ':not(.no-export)' }
+                   }
          
                  ],
          

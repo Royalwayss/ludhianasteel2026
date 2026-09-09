@@ -28,8 +28,10 @@
                               <th>Email</th>
                               <th>Phone</th>
                               <th>Position</th>
+                              <th>Message</th>
+                              <th>Resume</th>
                               <th>Date</th>
-                              <th>View</th>
+                              <th class="no-export">View</th>
                            </tr>
                         </thead>
                         <tbody>
@@ -51,8 +53,10 @@
                               <td><?php echo htmlspecialchars($row['email']); ?></td>
                               <td><?php echo htmlspecialchars($row['phone']); ?></td>
                               <td><?php echo htmlspecialchars($row['position']); ?></td>
-                              <td><?php echo date('d-m-Y', strtotime($row['created_at'])); ?></td>
-                              <td>
+                              <td><?php echo $row['message'] !== '' ? htmlspecialchars($row['message']) : '—'; ?></td>
+                              <td><?php echo !empty($row['attachment']) ? htmlspecialchars(BASEURL.'uploads/resumes/'.rawurlencode($row['attachment'])) : '—'; ?></td>
+                              <td><?php echo date('d-m-Y H:i:s', strtotime($row['created_at'])); ?></td>
+                              <td class="no-export">
                                  <a href="career_application_view.php?id=<?php echo $row['id']; ?>" class="<?php echo $view_btn_class; ?>">View</a>
                               </td>
                            </tr>
@@ -85,7 +89,19 @@
              fixedHeader: true,
              responsive: true,
              dom: '<"html5buttons"B>lTfgitp',
-             buttons: ['print', 'excelHtml5'],
+             columnDefs: [
+                { targets: [5, 6], visible: false }
+             ],
+             buttons: [
+                {
+                   extend: 'print',
+                   exportOptions: { columns: ':not(.no-export)' }
+                },
+                {
+                   extend: 'excelHtml5',
+                   exportOptions: { columns: ':not(.no-export)' }
+                }
+             ],
              language: {
                buttons: {
                  colvis: '<i class="ti-view-grid"></i>'
