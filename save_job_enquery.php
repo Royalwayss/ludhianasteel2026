@@ -36,6 +36,8 @@
 
 	// ---- Attachment (required: pdf/doc/docx, max 2MB) ----
 	$attachment_name = '';
+	$upload_path     = '';
+	$file_orig       = '';
 	$allowed_ext = ['pdf','doc','docx'];
 	$max_size    = 2 * 1024 * 1024; // 2 MB
 
@@ -61,6 +63,7 @@
 			if(!move_uploaded_file($file_tmp, $upload_path)){
 				$err = 1;
 				$attachment_name = '';
+				$upload_path = '';
 			}
 		}
 	}else{
@@ -109,7 +112,7 @@
 			$response[] = '
 			<tr>
 			   <td align="right" valign="top" style="border-top:1px solid #dfdfdf; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#000; padding:7px 5px 7px 0;"><strong>Resume</strong>: </td>
-			   <td align="left" valign="top" style="border-top:1px solid #dfdfdf; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#000; padding:7px 0 7px 5px;">' . $attachment_name . '</td>
+			   <td align="left" valign="top" style="border-top:1px solid #dfdfdf; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#000; padding:7px 0 7px 5px;">Attached (' . htmlspecialchars($file_orig, ENT_QUOTES, 'UTF-8') . ')</td>
 			</tr>
 			';
 		}
@@ -220,7 +223,68 @@
 		   </body>
 		</html>
 		';
-        /*
+
+		require("PHPMailer/PHPMailer.php");
+		require("PHPMailer/SMTP.php");
+		require("PHPMailer/Exception.php");
+		require("email_connection.php");
+
+		$mail = new PHPMailer\PHPMailer\PHPMailer(true);
+
+		try {
+			// Server settings
+			$mail->isSMTP();
+			// Use 'smtppro.zoho.in' if you have a paid business account,
+			// or 'smtp.zoho.in' for personal/standard accounts.
+			$mail->Host       = 'smtp.zoho.in';
+			$mail->SMTPAuth   = true;
+			$mail->Username   = $email_username; // Your full Zoho email address
+			$mail->Password   = $email_password; // Your Zoho App-Specific Password
+
+			// SSL/465 is generally more stable for Zoho.
+			$mail->SMTPSecure = PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_SMTPS;
+			$mail->Port       = 465;
+			//$mail->SMTPDebug = 2;
+
+			// Recipients
+			$mail->setFrom($email_username, 'mis');
+			$mail->addAddress('rwpttech@gmail.com');
+			//$mail->addAddress('hrd@ludhianasteel.com');
+			//$mail->addCC('hr2@ludhianasteel.com');
+
+			// Reply goes straight to the applicant
+			$mail->addReplyTo($email, $applicant_name);
+
+			// Resume attachment (sent with the applicant's original file name)
+			if( $upload_path != '' && file_exists($upload_path) ) {
+				$mail->addAttachment($upload_path, $file_orig);
+			}
+
+			// Content
+			$mail->isHTML(true);
+			$mail->Subject = "Ludhianasteel Career Application | ".date('d-m-Y');
+			$mail->Body    = $mail_message;
+			$mail->AltBody = 'Ludhianasteel Career Application';
+
+			$mail->send();
+
+		} catch (Exception $e) {
+			// silent fail — application is already saved to the DB either way
+		}
+
+		echo '{ "alert": "alert alert-success alert-dismissable", "message": "Your application has been submitted successfully!" }';
+
+	}else{
+		echo '{ "alert": "alert alert-danger alert-dismissable", "message": "Please fill all required fields and attach a valid resume (PDF, DOC or DOCX, max 2 MB)." }';
+	}
+	
+	
+	
+	
+	
+	
+	
+	 /*
 		try{
 			// 1. YOUR CREDENTIALS
 			$refresh_token = '1000.5120537a18efa38ae22987160d4e50d0.cae3b8064f06e7f208cce2593e121866';
@@ -276,10 +340,12 @@
 			// silent fail — application is already saved to the DB either way
 		} */
 
-		echo '{ "alert": "alert alert-success alert-dismissable", "message": "Your application has been submitted successfully!" }';
-
-	}else{
-		echo '{ "alert": "alert alert-danger alert-dismissable", "message": "Please fill all required fields and attach a valid resume (PDF, DOC or DOCX, max 2 MB)." }';
-	}
+	
+	
+	
+	
+	
+	
+	
 
 ?>

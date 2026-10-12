@@ -250,11 +250,11 @@
 				';
 				
 				
-				/*
+				
 				
 				require("PHPMailer/PHPMailer.php");
 				require("PHPMailer/SMTP.php");
-				require("PHPMailer/Exception.php"); // Added Exception.php for better error handling
+				require("PHPMailer/Exception.php"); 
 				require("email_connection.php");
 				
 				
@@ -296,10 +296,11 @@
 		} catch (Exception $e) {
 			//echo json_encode(array("status" => false, "message" => "Message could not be sent. Error: {$mail->ErrorInfo}"));
 		}
-         echo '{ "alert": "alert alert-success alert-dismissable", "message": "Your message has been sent successfully!" }';
+       
+		 echo '{ "alert": "alert alert-success alert-dismissable", "message": "Your message has been sent successfully!" }';
 				
 				
-				*/
+				
 				
 				
 				
