@@ -279,10 +279,10 @@
 
 			// Recipients
 			$mail->setFrom($email_username, 'mis');
-			$mail->addAddress('rwpttech@gmail.com');
-			//$mail->addAddress('info@ludhianasteel.com');
-			//$mail->addCC('jaspreet@rtpltech.com');
-			//$mail->addBCC('rwpttech@gmail.com');
+			
+			$mail->addAddress('info@ludhianasteel.com');
+			$mail->addBCC('jaspreet@rtpltech.com');
+			
 
 			// Content
 			$mail->isHTML(true);
@@ -290,7 +290,7 @@
 			$mail->Body    = $mail_message;
 			$mail->AltBody = 'Ludhianasteel Mail';
 
-			$mail->send();
+			//$mail->send();
 			//echo json_encode(array("status" => true, "message" => "Email sent successfully via Zoho"));
 
 		} catch (Exception $e) {
@@ -364,7 +364,7 @@
 							//echo 'Message: ' .$e->getMessage();
 					} */
 			  
-			       echo '{ "alert": "alert alert-success alert-dismissable", "message": "Your message has been sent successfully!" }';
+			     //  echo '{ "alert": "alert alert-success alert-dismissable", "message": "Your message has been sent successfully!" }';
 			  
 			    
 	}else{

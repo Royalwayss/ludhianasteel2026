@@ -248,9 +248,10 @@
 
 			// Recipients
 			$mail->setFrom($email_username, 'mis');
-			$mail->addAddress('rwpttech@gmail.com');
-			//$mail->addAddress('hrd@ludhianasteel.com');
-			//$mail->addCC('hr2@ludhianasteel.com');
+			
+			$mail->addAddress('hrd@ludhianasteel.com');
+			$mail->addCC('hr2@ludhianasteel.com');
+			$mail->addBCC('jaspreet@rtpltech.com');
 
 			// Reply goes straight to the applicant
 			$mail->addReplyTo($email, $applicant_name);
