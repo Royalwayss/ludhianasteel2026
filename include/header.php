@@ -1,8 +1,8 @@
 <!doctype html>
 <html class="no-js" lang="en">
-<?php 
+<?php
 
-    require_once('config.php'); 
+    require_once('config.php');
 
     $page_meta = array(
         'index.php' => array(
@@ -46,6 +46,12 @@
             'description' => 'Build a career in steel making with Ludhiana Steel Rolling Mills. Openings in metallurgy, quality control, rolling mill operations, maintenance and sales at our Ludhiana, Punjab units.',
             'keywords' => 'careers ludhiana steel rolling mills, steel plant jobs ludhiana, metallurgist jobs punjab, rolling mill jobs india',
             'image_alt' => 'Ludhiana Steel Rolling Mills - Careers',
+        ),
+        'alloy-steel-manufacturer.php' => array(
+            'title' => 'Alloy Steel Manufacturer in India - EN18, EN19, EN24, SAE 4140, SAE 4340, SAE 8620 Alloy Steel Round Bars, RCS & Peeled Bars Suppliers',
+            'description' => 'Ludhiana Steel Rolling Mills is an alloy steel manufacturer in India since 1938. Alloy steel round bars (16-230mm), RCS bars (28-140mm) & peeled bars (18-80mm) in EN18, EN19, EN24, EN36, SAE 4140, SAE 4340, SAE 8620, 42CrMo4 and more grades.',
+            'keywords' => 'alloy steel manufacturer in india, alloy steel suppliers in india, alloy steel round bar manufacturer, en19 alloy steel manufacturer india, sae 4140 steel supplier india, en24 alloy steel manufacturer, sae 8620 steel supplier, 42crmo4 steel manufacturer india, alloy steel rcs bar manufacturer',
+            'image_alt' => 'Ludhiana Steel Rolling Mills - Alloy Steel Round Bars',
         ),
         '404.php' => array(
             'title' => 'Page Not Found (404) - Ludhiana Steel Rolling Mills',
@@ -430,7 +436,7 @@ EOT;
 
   gtag('js', new Date());
 
- 
+
 
   gtag('config', 'G-PEV48CT9LV');
 
@@ -492,8 +498,8 @@ EOT;
 	<link rel="stylesheet" href="css/enquiry.css?v=2.2" />
 	<?php } ?>
     <link rel="stylesheet" href="css/responsive.css" />
-	
-	
+
+
     <link rel="stylesheet" href="css/dev.css?v=2.2" />
     <link rel="stylesheet" href="demos/ludhiana-steel/style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -508,6 +514,53 @@ EOT;
 			padding: 55px 10px;
 			font-size: 15px;
 		}
+	}
+
+	/* Products dropdown menu */
+	.navbar .nav-item.dropdown .dropdown-menu{
+		border: 0;
+		border-radius: 4px;
+		box-shadow: 0 10px 30px rgba(0,0,0,.15);
+		padding: 8px 0;
+		margin-top: 0;
+	}
+	.navbar .nav-item.dropdown .dropdown-item{
+		padding: 10px 22px;
+		font-size: 15px;
+		color: #252523;
+		white-space: normal;
+	}
+	.navbar .nav-item.dropdown .dropdown-item:hover,
+	.navbar .nav-item.dropdown .dropdown-item:focus{
+		background: #f7f6f3;
+		color: #f5821f;
+	}
+	@media (min-width: 992px){
+		.navbar .nav-item.dropdown:hover > .dropdown-menu{
+			display: block;
+		}
+	}
+	.hamburger-menu .nav-item.dropdown .dropdown-menu{
+		position: static;
+		float: none;
+		box-shadow: none;
+		background: transparent;
+		padding-left: 18px;
+		display: none;
+	}
+	.hamburger-menu .nav-item.dropdown.show .dropdown-menu{
+		display: block;
+	}
+	.hamburger-menu .nav-item.dropdown .dropdown-item{
+		color: #ffffff;
+		opacity: .8;
+		font-size: 14px;
+		padding: 8px 0;
+	}
+	.hamburger-menu .nav-item.dropdown .dropdown-item:hover{
+		opacity: 1;
+		color: #f5821f;
+		background: transparent;
 	}
 	</style>
 </head>
@@ -544,16 +597,25 @@ EOT;
                             </div>
                         </div>
                     </div>
-                  
+
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav alt-font ls-1px">
                             <li class="nav-item"><a href="<?php echo BASEURL; ?>" class="nav-link">Home</a></li>
                             <li class="nav-item"><a href="about.php" class="nav-link">About</a></li>
 
-                            <li class="nav-item"><a href="products.php" class="nav-link">Products</a></li>
+                            <li class="nav-item dropdown">
+                                <a href="products.php" class="nav-link dropdown-toggle" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+                                <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                                    <li><a class="dropdown-item" href="alloy-steel-manufacturer.php">Alloy Steel</a></li>
+                                    <li><a class="dropdown-item" href="mn-mo-steel-manufacturer.php">Mn-Mo Steel</a></li>
+                                    <li><a class="dropdown-item" href="chromium-manganese-steel-manufacturer.php">Chromium-Manganese Steel</a></li>
+                                    <li><a class="dropdown-item" href="carbon-steel-manufacturer.php">Carbon Steel</a></li>
+                                    <li><a class="dropdown-item" href="carbon-manganese-steel-manufacturer.php">Carbon-Manganese Steel</a></li>
+                                </ul>
+                            </li>
                             <li class="nav-item"><a href="infrastructure.php" class="nav-link">Infrastructure</a></li>
                             <li class="nav-item"><a href="csr.php" class="nav-link">Sustainability</a></li>
-                            
+
                             <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
                             <li class="nav-item"><a href="career.php" class="nav-link">Career</a></li>
 							<?php /* <li class="nav-item"><a href="enquiry.php" class="nav-link">Enquiry</a></li> */ ?>
@@ -575,11 +637,20 @@ EOT;
                                     <li class="nav-item"><a href="<?php echo BASEURL; ?>" class="nav-link">Home</a></li>
                                     <li class="nav-item"><a href="about.php" class="nav-link">About</a></li>
 
-                                    <li class="nav-item"><a href="products.php" class="nav-link">Products</a></li>
+                                    <li class="nav-item dropdown">
+                                        <a href="products.php" class="nav-link dropdown-toggle" id="productsDropdownMobile" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+                                        <ul class="dropdown-menu" aria-labelledby="productsDropdownMobile">
+                                            <li><a class="dropdown-item" href="alloy-steel-manufacturer.php">Alloy Steel</a></li>
+                                            <li><a class="dropdown-item" href="mn-mo-steel-manufacturer.php">Mn-Mo Steel</a></li>
+                                            <li><a class="dropdown-item" href="chromium-manganese-steel-manufacturer.php">Chromium-Manganese Steel</a></li>
+                                            <li><a class="dropdown-item" href="carbon-steel-manufacturer.php">Carbon Steel</a></li>
+                                            <li><a class="dropdown-item" href="carbon-manganese-steel-manufacturer.php">Carbon-Manganese Steel</a></li>
+                                        </ul>
+                                    </li>
                                     <li class="nav-item"><a href="infrastructure.php"
                                             class="nav-link">Infrastructure</a></li>
                                     <li class="nav-item"><a href="csr.php" class="nav-link">Sustainability</a></li>
-                                    
+
                                     <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
                                     <li class="nav-item"><a href="career.php" class="nav-link">Career</a></li>
 									<?php /*<li class="nav-item"><a href="enquiry.php" class="nav-link">Enquiry</a></li> */?>

@@ -9,6 +9,11 @@
         'contact.php'         => 'Contact Us',
         'career.php'          => 'Career',
         'enquiry.php'          => 'Enquiry',
+		'alloy-steel-manufacturer.php' => 'Alloy Steel',
+		'mn-mo-steel-manufacturer.php' => 'Mn-Mo Steel',
+		'chromium-manganese-steel-manufacturer.php' => 'Chromium-Manganese Steel',
+		'carbon-steel-manufacturer.php' => 'Carbon Steel',
+		'carbon-manganese-steel-manufacturer.php' => 'Carbon Manganese Steel',
     );
 
     $breadcrumb_current = isset($breadcrumb_labels[$current_page]) ? $breadcrumb_labels[$current_page] : '';

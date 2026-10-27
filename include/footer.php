@@ -126,6 +126,7 @@
      <!-- end scroll progress -->
      <!-- javascript libraries -->
      <script type="text/javascript" src="js/jquery.js"></script>
+     <script type="text/javascript" src="js/jquery.validate.min.js"></script>
      <script type="text/javascript" src="js/vendors.min.js"></script>
      <script async defer src="https://maps.googleapis.com/maps/api/js?key=<YOUR_API_KEY>&callback=initMap"></script>
      <script type="text/javascript" src="js/main.js?v=2.0"></script>
