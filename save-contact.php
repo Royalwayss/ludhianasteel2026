@@ -290,7 +290,7 @@
 			$mail->Body    = $mail_message;
 			$mail->AltBody = 'Ludhianasteel Mail';
 
-			//$mail->send();
+			$mail->send();
 			//echo json_encode(array("status" => true, "message" => "Email sent successfully via Zoho"));
 
 		} catch (Exception $e) {

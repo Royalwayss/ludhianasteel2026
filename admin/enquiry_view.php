@@ -10,8 +10,8 @@
          ?>
       <script src="https://cdn.ckeditor.com/4.15.1/standard/ckeditor.js"></script>
       <?Php
-         $id= $_GET['id'];
-         $sql = "SELECT *  FROM enquiries where id='".$_GET['id']."'"; 
+         $id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
+         $sql = "SELECT *  FROM enquiries where id='".$id."'"; 
          $result =mysqli_query($conn, $sql);
          $row = mysqli_fetch_assoc($result); 
          if($row['view_status'] == '0'){
@@ -41,80 +41,18 @@
                      <div class="row">
 
                         <div class="col-md-6 ">
-                           <b><label>Enquiry Type:</label></b><br> 
-                           <p style="margin-left:10px"> <?php echo ucfirst($row['enquiry_type']); ?> </p>
+                           <b><label>Product:</label></b><br> 
+                           <p style="margin-left:10px"> <?php echo htmlspecialchars($row['form_type']); ?> </p>
                         </div>
 
                         <div class="col-md-6 ">
-                           <b><label>Product Form:</label></b><br> 
-                           <p style="margin-left:10px"> <?php echo $row['form_type']; ?> </p>
-                        </div>
-
-                        <div class="col-md-6 ">
-                           <b><label>Steel Grade:</label></b><br> 
-                           <p style="margin-left:10px"> <?php echo $row['grade'] != '' ? $row['grade'] : '-'; ?> </p>
-                        </div>
-
-                        <div class="col-md-6 ">
-                           <b><label>Size:</label></b><br> 
-                           <p style="margin-left:10px"> <?php echo $row['size']; ?> </p>
-                        </div>
-
-                        <div class="col-md-6 ">
-                           <b><label>Quantity:</label></b><br> 
-                           <p style="margin-left:10px"> <?php echo $row['qty'].' '.$row['qty_unit']; ?> </p>
-                        </div>
-
-                        <div class="col-md-6 ">
-                           <b><label>Supply Condition:</label></b><br> 
-                           <p style="margin-left:10px"> <?php echo $row['supply_condition'] != '' ? $row['supply_condition'] : '-'; ?> </p>
-                        </div>
-
-                        <div class="col-md-6 ">
-                           <b><label>Frequency:</label></b><br> 
-                           <p style="margin-left:10px"> <?php echo $row['frequency'] != '' ? $row['frequency'] : '-'; ?> </p>
-                        </div>
-
-                        <div class="col-md-6 ">
-                           <b><label>Required By:</label></b><br> 
-                           <p style="margin-left:10px"> <?php echo $row['required_by'] != '' ? date('d-m-Y', strtotime($row['required_by'])) : '-'; ?> </p>
-                        </div>
-
-                     </div>
-
-                     <hr>
-                     <h4 class="m-t-0 m-b-15">Application</h4>
-                     <div class="row">
-
-                        <div class="col-md-6 ">
-                           <b><label>Component:</label></b><br> 
-                           <p style="margin-left:10px"> <?php echo $row['application']; ?> </p>
-                        </div>
-
-                        <div class="col-md-6 ">
-                           <b><label>Specification:</label></b><br> 
-                           <p style="margin-left:10px"> <?php echo $row['spec'] != '' ? $row['spec'] : '-'; ?> </p>
-                        </div>
-
-                        <div class="col-md-6 ">
-                           <b><label>Delivery Location:</label></b><br> 
-                           <p style="margin-left:10px"> <?php echo $row['delivery'] != '' ? $row['delivery'] : '-'; ?> </p>
-                        </div>
-
-                        <div class="col-md-6 ">
-                           <b><label>Attachment:</label></b><br> 
-                           <p style="margin-left:10px">
-                              <?php if (!empty($row['attachment'])): ?>
-                                 <a href="<?php echo BASEURL .'uploads/enquiry/'. $row['attachment']; ?>" target="_blank" class="btn btn-sm btn-primary">Download</a>
-                              <?php else: ?>
-                                 -
-                              <?php endif; ?>
-                           </p>
+                           <b><label>Date & Time:</label></b><br> 
+                           <p style="margin-left:10px"> <?php echo date('d-m-Y H:i:s',strtotime($row['created_at'])); ?> </p>
                         </div>
 
                         <div class="col-md-12 ">
-                           <b><label>Message:</label></b><br> 
-                           <p style="margin-left:10px"> <?php echo $row['comment'] != '' ? nl2br($row['comment']) : '-'; ?> </p>
+                           <b><label>Requirement:</label></b><br> 
+                           <p style="margin-left:10px"> <?php echo $row['comment'] != '' ? nl2br(htmlspecialchars($row['comment'])) : '-'; ?> </p>
                         </div>
 
                      </div>
@@ -125,47 +63,17 @@
 
                         <div class="col-md-6 ">
                            <b><label>Name:</label></b><br> 
-                           <p style="margin-left:10px"> <?php echo $row['name']; ?> </p>
-                        </div>
-
-                        <div class="col-md-6 ">
-                           <b><label>Company:</label></b><br> 
-                           <p style="margin-left:10px"> <?php echo $row['company']; ?> </p>
-                        </div>
-
-                        <div class="col-md-6 ">
-                           <b><label>Designation:</label></b><br> 
-                           <p style="margin-left:10px"> <?php echo $row['designation'] != '' ? $row['designation'] : '-'; ?> </p>
-                        </div>
-
-                        <div class="col-md-6 ">
-                           <b><label>Industry:</label></b><br> 
-                           <p style="margin-left:10px"> <?php echo $row['industry'] != '' ? $row['industry'] : '-'; ?> </p>
-                        </div>
-
-                        <div class="col-md-6 ">
-                           <b><label>Email:</label></b><br> 
-                           <p style="margin-left:10px"> <?php echo $row['email']; ?> </p>
+                           <p style="margin-left:10px"> <?php echo htmlspecialchars($row['name']); ?> </p>
                         </div>
 
                         <div class="col-md-6 ">
                            <b><label>Phone:</label></b><br> 
-                           <p style="margin-left:10px"> <?php echo $row['phone']; ?> </p>
+                           <p style="margin-left:10px"> <?php echo htmlspecialchars($row['phone']); ?> </p>
                         </div>
 
                         <div class="col-md-6 ">
-                           <b><label>City:</label></b><br> 
-                           <p style="margin-left:10px"> <?php echo $row['city'] != '' ? $row['city'] : '-'; ?> </p>
-                        </div>
-
-                        <div class="col-md-6 ">
-                           <b><label>Country:</label></b><br> 
-                           <p style="margin-left:10px"> <?php echo $row['country'] != '' ? $row['country'] : '-'; ?> </p>
-                        </div>
-
-                        <div class="col-md-6 ">
-                           <b><label>Date & Time:</label></b><br> 
-                           <p style="margin-left:10px"> <?php echo date('d-m-Y H:i:s',strtotime($row['created_at'])); ?></p>
+                           <b><label>Email:</label></b><br> 
+                           <p style="margin-left:10px"> <?php echo htmlspecialchars($row['email']); ?> </p>
                         </div>
 
                      </div>
