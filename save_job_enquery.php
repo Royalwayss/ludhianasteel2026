@@ -228,7 +228,7 @@
 		require("PHPMailer/SMTP.php");
 		require("PHPMailer/Exception.php");
 		require("email_connection.php");
-
+/*
 		$mail = new PHPMailer\PHPMailer\PHPMailer(true);
 
 		try {
@@ -272,7 +272,7 @@
 		} catch (Exception $e) {
 			// silent fail — application is already saved to the DB either way
 		}
-
+*/
 		echo '{ "alert": "alert alert-success alert-dismissable", "message": "Your application has been submitted successfully!" }';
 
 	}else{

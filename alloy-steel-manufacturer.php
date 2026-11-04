@@ -283,7 +283,7 @@
     </section>
 
     <!-- Enquiry form -->
-    <section class="p-section p-wash" id="enquire">
+    <section class="p-section p-wash" id="product-enquiry">
         <div class="container">
             <?php
                 $product_name = 'Alloy Steel';

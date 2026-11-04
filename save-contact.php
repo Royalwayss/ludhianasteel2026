@@ -258,7 +258,7 @@
 				require("email_connection.php");
 				
 				
-				
+				/*
 				$mail = new PHPMailer\PHPMailer\PHPMailer(true);
 
 		try {
@@ -280,8 +280,10 @@
 			// Recipients
 			$mail->setFrom($email_username, 'mis');
 			
-			$mail->addAddress('info@ludhianasteel.com');
-			$mail->addBCC('jaspreet@rtpltech.com');
+			$mail->addAddress('rwpttech@gmail.com');
+			//$mail->addAddress('info@ludhianasteel.com');
+			//$mail->addBCC('jaspreet@rtpltech.com');
+			//$mail->addBCC('rwpttech@gmail.com');
 			
 
 			// Content
@@ -296,7 +298,7 @@
 		} catch (Exception $e) {
 			//echo json_encode(array("status" => false, "message" => "Message could not be sent. Error: {$mail->ErrorInfo}"));
 		}
-       
+       */
 		 echo '{ "alert": "alert alert-success alert-dismissable", "message": "Your message has been sent successfully!" }';
 				
 				
