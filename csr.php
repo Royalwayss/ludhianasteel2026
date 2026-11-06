@@ -95,7 +95,7 @@
               >
                 <!-- <img src="https://placehold.co/85x77" alt="" class="mb-20px"> -->
                 <h4 class="fw-700 text-dark-gray ls-minus-1px mb-20px csr-sub2-heading">Nurturing Nature, Empowering People</h4>
-                <p class="mb-35px w-90 lg-w-100">To further reduce our carbon footprint, we have also installed a <strong> 400 KW
+                <p class="mb-35px w-90 lg-w-100">To further reduce our carbon footprint, we have also installed a <strong> 2000 KW
                     rooftop solar power system, </strong> enabling us to generate clean, renewable energy and significantly lower
                     our dependency on conventional power sources.
                 </p>
@@ -118,8 +118,8 @@
                 </div> -->
                 <div
                     class="d-inline-flex flex-column justify-content-center text-center align-items-center rounded-circle h-170px w-170px xs-h-130px xs-w-130px text-white bg-base-color fw-500 fs-26 lh-32 ps-10px pe-10px position-absolute bottom-60px right-30px xxl-right-minus-0px lg-right-40px md-right-100px md-bottom-40px sm-left-10px sm-bottom-20px z-index-1">
-                    <h3 class="mb-0 fw-700 ls-minus-2px">400<span style="font-size:16px; font-weight:600;"> (KW)</span>
-                    </h3><span class="fs-15 lh-18 w-80">Rooftop Solar Power System,</span>
+                    <h4 class="mb-0 fw-700 ls-minus-2px">2000<span style="font-size:16px; font-weight:600;"> (KW)</span>
+                    </h4><span class="fs-15 lh-18 w-80">Rooftop Solar Power System,</span>
                 </div>
             </div>
             <div class="col-xl-2 col-lg-2 col-md-12"
@@ -136,7 +136,7 @@
                         <span class="d-inline-block lh-22 counter-heading-new">Miyawaki Forest (Trees)</span>
                     </div>
                     <div class="col-12 col-sm-4 col-md-4 col-lg-auto">
-                        <h2 class="fw-700 text-dark-gray ls-minus-3px mb-5px counter" data-speed="2000" data-to="400">
+                        <h2 class="fw-700 text-dark-gray ls-minus-3px mb-5px counter" data-speed="2000" data-to="2000">
                         </h2>
                         <span class="d-inline-block lh-22 counter-heading-new">Rooftop Solar Power (KW)</span>
                     </div>

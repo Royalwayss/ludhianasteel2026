@@ -1,0 +1,1518 @@
+/* ============================================================
+   LSRM BESPOKE PRODUCT PAGE STYLESHEET
+   File: css/new-prdo.css
+   Used for: alloy-steel-manufacturer.php
+   Design references: about.php (.counter-new-design, .ldh-facility-card,
+   .info-card, text-highlight, animated lines, modern card grids)
+   Colors:
+     --prdo-accent: #f5821f (LSRM Signature Orange)
+     --prdo-accent-dark: #d9701a
+     --prdo-accent-light: #fff3e8
+     --prdo-navy: #23346b (LSRM Steel Navy)
+     --prdo-ink: #252523
+     --prdo-muted: #666666
+     --prdo-line: #e6e6e6
+     --prdo-card-bg: #ffffff
+     --prdo-wash: #f8f9fa
+   ============================================================ */
+
+:root {
+    --prdo-accent: #f5821f;
+    --prdo-accent-dark: #d9701a;
+    --prdo-accent-light: #fff4ea;
+    --prdo-accent-glow: rgba(245, 130, 31, 0.2);
+    --prdo-navy: #23346b;
+    --prdo-navy-light: #f0f3fa;
+    --prdo-ink: #252523;
+    --prdo-muted: #5e6267;
+    --prdo-line: #e5e7eb;
+    --prdo-border-soft: #f0f0f0;
+    --prdo-card-bg: #ffffff;
+    --prdo-wash: #f8f9fb;
+    --prdo-radius: 14px;
+    --prdo-radius-sm: 8px;
+    --prdo-shadow-sm: 0 4px 14px rgba(0, 0, 0, 0.04);
+    --prdo-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    --prdo-shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.1);
+    --prdo-transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ============================================================
+   BASE PAGE & SECTION CONTAINERS
+   ============================================================ */
+.product-page {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--prdo-ink);
+    background-color: #ffffff;
+}
+
+.product-page * {
+    box-sizing: border-box;
+}
+
+.prdo-section {
+    padding: 70px 0;
+    position: relative;
+}
+
+.prdo-section.bg-wash {
+    background-color: var(--prdo-wash);
+}
+
+.prdo-section.bg-white {
+    background-color: #ffffff;
+}
+
+.prdo-section.bg-navy-tint {
+    background-color: #f4f6fa;
+}
+
+/* List styling inside cards & glass panels */
+.product-page ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 14px 0 16px;
+}
+
+.product-page ul li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 8px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: inherit;
+}
+
+.product-page ul li .infra-li-icon,
+.product-page ul li i.bi {
+    color: var(--prdo-accent);
+    font-size: 15px;
+    margin-top: 4px;
+    flex-shrink: 0;
+}
+
+.prdo-glass-panel ul li {
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.prdo-glass-panel h4 {
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 22px;
+    margin-bottom: 10px;
+}
+
+.prdo-glass-panel h4:first-child {
+    margin-top: 0;
+}
+
+.prdo-glass-panel ul,
+.prdo-callout-panel ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 24px;
+}
+
+@media (max-width: 767.98px) {
+    .prdo-glass-panel ul,
+    .prdo-callout-panel ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ============================================================
+   TYPOGRAPHY & SECTION HEADERS (Referencing about.php)
+   ============================================================ */
+.prdo-header {
+    margin-bottom: 45px;
+}
+
+.prdo-subtitle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--prdo-accent);
+    margin-bottom: 12px;
+    background: var(--prdo-accent-light);
+    padding: 6px 16px;
+    border-radius: 30px;
+}
+
+.prdo-subtitle::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--prdo-accent);
+}
+
+.prdo-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--prdo-ink);
+    line-height: 1.25;
+    margin-bottom: 16px;
+}
+
+.prdo-title .text-highlight {
+    position: relative;
+    display: inline-block;
+    /* color: var(--prdo-navy); */
+}
+
+.prdo-title .text-highlight .separator-animation {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--prdo-accent);
+    border-radius: 2px;
+}
+
+.prdo-lead {
+    font-size: 1.1rem;
+    line-height: 1.75;
+    color: var(--prdo-muted);
+    max-width: 820px;
+}
+
+.prdo-header.text-center .prdo-lead {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ============================================================
+   HERO / INTRO SHOWCASE SECTION
+   ============================================================ */
+.prdo-intro-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.prdo-intro-text p {
+    color: #44474d;
+    font-size: 16.5px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.prdo-btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--prdo-accent);
+    color: #ffffff !important;
+    font-weight: 700;
+    font-size: 14.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 14px 34px;
+    border-radius: var(--prdo-radius-sm);
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(245, 130, 31, 0.28);
+    transition: var(--prdo-transition);
+    margin-top: 6px;
+    margin-bottom: 22px;
+}
+
+.prdo-btn-primary:hover {
+    background: var(--prdo-accent-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 26px rgba(245, 130, 31, 0.36);
+    color: #ffffff !important;
+}
+
+.prdo-btn-primary svg {
+    transition: transform 0.3s ease;
+}
+
+.prdo-btn-primary:hover svg {
+    transform: translateX(4px);
+}
+
+/* Intro Executive Card (Referencing about.php stat/experience badge) */
+.prdo-stats-card {
+    background: #ffffff;
+    border: 1px solid var(--prdo-line);
+    border-radius: var(--prdo-radius);
+    padding: 35px 30px;
+    box-shadow: var(--prdo-shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+.prdo-stats-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--prdo-navy), var(--prdo-accent));
+}
+
+.prdo-stats-card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--prdo-border-soft);
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+.prdo-stats-card-head .brand-legacy {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--prdo-navy);
+}
+
+.prdo-stats-card-head .est-pill {
+    background: var(--prdo-accent-light);
+    color: var(--prdo-accent);
+    font-weight: 700;
+    font-size: 12.5px;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.prdo-stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.prdo-stat-item {
+    background: var(--prdo-wash);
+    padding: 18px;
+    border-radius: var(--prdo-radius-sm);
+    border: 1px solid var(--prdo-border-soft);
+    transition: var(--prdo-transition);
+}
+
+.prdo-stat-item:hover {
+    background: #ffffff;
+    border-color: var(--prdo-accent);
+    transform: translateY(-3px);
+    box-shadow: var(--prdo-shadow-sm);
+}
+
+.prdo-stat-item .num {
+    font-family: inherit;
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--prdo-navy);
+    line-height: 1.1;
+    display: block;
+}
+
+.prdo-stat-item .num sup {
+    color: var(--prdo-accent);
+    font-size: 1.2rem;
+    top: -0.6em;
+}
+
+.prdo-stat-item .label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--prdo-muted);
+    line-height: 1.4;
+    margin-top: 6px;
+    display: block;
+}
+
+/* ============================================================
+   HIGHLIGHT PANEL: "What Makes Alloy Steel Different"
+   (With Background Image & Glassmorphism Effect)
+   ============================================================ */
+.prdo-section-bg-image {
+    position: relative;
+    background-image: url('../images/lsrm/about-banner-1.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #ffffff;
+    overflow: hidden;
+    padding: 85px 0;
+}
+
+.prdo-section-bg-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgb(0 0 0 / 88%) 0%, rgb(0 0 0 / 50%) 50%, rgb(0 0 0 / 50%) 100%);
+    z-index: 1;
+}
+
+.prdo-section-bg-image .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Glass Header on Dark Background */
+.prdo-header-light .prdo-subtitle {
+    background: rgba(245, 130, 31, 0.2);
+    color: #ff9d42;
+    border: 1px solid rgba(245, 130, 31, 0.4);
+    box-shadow: 0 4px 15px rgba(245, 130, 31, 0.15);
+}
+
+.prdo-header-light .prdo-subtitle::before {
+    background-color: #ffa24c;
+    box-shadow: 0 0 8px #ffa24c;
+}
+
+.prdo-header-light .prdo-title {
+    color: #ffffff !important;
+}
+
+.prdo-header-light .prdo-title .text-highlight {
+    color: #ffa858 !important;
+}
+
+.prdo-header-light .prdo-title .text-highlight .separator-animation {
+    background-color: var(--prdo-accent);
+    box-shadow: 0 0 10px rgba(245, 130, 31, 0.7);
+}
+
+/* Glassmorphism Panel */
+.prdo-glass-panel {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-top: 1px solid rgba(255, 255, 255, 0.35);
+    border-left: 5px solid var(--prdo-accent);
+    border-radius: var(--prdo-radius);
+    padding: 45px 42px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.2);
+    transition: var(--prdo-transition);
+}
+
+.prdo-glass-panel:hover {
+    background: rgba(255, 255, 255, 0.11);
+    border-color: rgba(255, 255, 255, 0.28);
+    box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.55), inset 0 1px 1px rgba(255, 255, 255, 0.3);
+    transform: translateY(-4px);
+}
+
+.prdo-glass-panel p {
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.92);
+    line-height: 1.85;
+    margin-bottom: 18px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.prdo-glass-panel p:last-child {
+    margin-bottom: 0;
+}
+
+.prdo-callout-panel {
+    background: #ffffff;
+    border: 1px solid var(--prdo-line);
+    border-left: 5px solid var(--prdo-accent);
+    border-radius: var(--prdo-radius);
+    padding: 40px;
+    box-shadow: var(--prdo-shadow);
+    position: relative;
+}
+
+.prdo-callout-panel p {
+    font-size: 16.5px;
+    color: #44474d;
+    line-height: 1.85;
+    margin-bottom: 16px;
+}
+
+.prdo-callout-panel p:last-child {
+    margin-bottom: 0;
+}
+
+/* ============================================================
+   PRODUCT FORMS GRID (3-Cards: Round, RCS, Peeled)
+   (Ref: about.php .ldh-facility-card)
+   ============================================================ */
+.prdo-forms-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.prdo-form-card {
+    position: relative;
+    background: #ffffff;
+    border: 1px solid var(--prdo-line);
+    border-radius: var(--prdo-radius);
+    padding: 35px 28px;
+    box-shadow: var(--prdo-shadow-sm);
+    transition: var(--prdo-transition);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.prdo-form-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--prdo-accent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.prdo-form-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--prdo-shadow-hover);
+    border-color: rgba(245, 130, 31, 0.4);
+}
+
+.prdo-form-card:hover::before {
+    transform: scaleX(1);
+}
+
+.prdo-form-icon-wrap {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    background: var(--prdo-navy-light);
+    color: var(--prdo-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: var(--prdo-transition);
+}
+
+.prdo-form-card:hover .prdo-form-icon-wrap {
+    background: var(--prdo-accent);
+    color: #ffffff;
+    transform: rotate(5deg) scale(1.05);
+}
+
+.prdo-form-card h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--prdo-ink);
+    margin-bottom: 12px;
+}
+
+.prdo-size-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--prdo-accent-light);
+    color: var(--prdo-navy);
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 13.5px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    border: 1px solid rgba(245, 130, 31, 0.2);
+}
+
+.prdo-size-badge strong {
+    color: var(--prdo-accent);
+    font-weight: 700;
+}
+
+.prdo-form-card p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--prdo-muted);
+    margin-bottom: 12px;
+}
+
+.prdo-form-card p:last-child {
+    margin-bottom: 0;
+}
+
+/* ============================================================
+   STEEL GRADES SHOWCASE (Interactive Badge Matrix)
+   ============================================================ */
+.prdo-grades-box {
+    background: #ffffff;
+    border: 1px solid var(--prdo-line);
+    border-radius: var(--prdo-radius);
+    padding: 40px;
+    box-shadow: var(--prdo-shadow);
+    margin-bottom: 25px;
+}
+
+.prdo-grades-box p {
+    font-size: 16px;
+    color: #44474d;
+    margin-bottom: 20px;
+}
+
+.prdo-grades-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+    margin-bottom: 28px;
+}
+
+.prdo-grade-pill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: var(--prdo-wash);
+    border: 1px solid var(--prdo-border-soft);
+    color: var(--prdo-navy);
+    font-weight: 700;
+    font-size: 15px;
+    padding: 12px 14px;
+    border-radius: var(--prdo-radius-sm);
+    transition: var(--prdo-transition);
+    text-align: center;
+}
+
+.prdo-grade-pill i {
+    color: var(--prdo-accent);
+    font-size: 13px;
+    transition: transform 0.2s ease;
+}
+
+.prdo-grade-pill:hover {
+    background: var(--prdo-navy);
+    color: #ffffff;
+    border-color: var(--prdo-navy);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(35, 52, 107, 0.18);
+}
+
+.prdo-grade-pill:hover i {
+    color: var(--prdo-accent);
+    transform: translateX(3px);
+}
+
+.prdo-grades-note {
+    background: var(--prdo-navy-light);
+    border-left: 4px solid var(--prdo-navy);
+    padding: 16px 20px;
+    border-radius: 6px;
+}
+
+.prdo-grades-note p {
+    font-size: 14.5px;
+    color: var(--prdo-navy);
+    line-height: 1.6;
+    margin: 0 0 8px;
+}
+
+.prdo-grades-note p:last-child {
+    margin-bottom: 0;
+}
+
+/* ============================================================
+   ALLOY SYSTEMS 4-GRID (Ref: about.php .info-card & facilities)
+   ============================================================ */
+.prdo-systems-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 26px;
+}
+
+.prdo-system-card {
+    background: #ffffff;
+    border: 1px solid var(--prdo-line);
+    border-radius: var(--prdo-radius);
+    padding: 32px 30px;
+    box-shadow: var(--prdo-shadow-sm);
+    transition: var(--prdo-transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.prdo-system-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--prdo-shadow-hover);
+    border-color: rgba(245, 130, 31, 0.35);
+}
+
+.prdo-system-card-top {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 16px;
+}
+
+.prdo-system-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: var(--prdo-accent-light);
+    color: var(--prdo-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.prdo-system-card h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--prdo-ink);
+    margin: 0;
+}
+
+.prdo-system-card hr.system-line {
+    height: 2px;
+    background: var(--prdo-accent);
+    border: none;
+    width: 50px;
+    margin: 14px 0 16px;
+    opacity: 0.85;
+}
+
+.prdo-system-card p {
+    font-size: 15px;
+    color: #4b5056;
+    line-height: 1.75;
+    margin-bottom: 12px;
+}
+
+.prdo-system-card p:last-child {
+    margin-bottom: 0;
+}
+
+/* ============================================================
+   APPLICATIONS & INDUSTRIES SECTION
+   ============================================================ */
+.prdo-industries-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    margin-bottom: 45px;
+}
+
+.prdo-industry-chip {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #ffffff;
+    border: 1px solid var(--prdo-line);
+    padding: 12px 16px;
+    border-radius: var(--prdo-radius-sm);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--prdo-ink);
+    box-shadow: var(--prdo-shadow-sm);
+    transition: var(--prdo-transition);
+}
+
+.prdo-industry-chip i {
+    color: var(--prdo-accent);
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.prdo-industry-chip:hover {
+    background: var(--prdo-accent);
+    color: #ffffff;
+    border-color: var(--prdo-accent);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(245, 130, 31, 0.25);
+}
+
+.prdo-industry-chip:hover i {
+    color: #ffffff;
+}
+
+.prdo-app-spotlight-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.prdo-app-card {
+    background: #ffffff;
+    border: 1px solid var(--prdo-line);
+    border-radius: var(--prdo-radius);
+    padding: 28px 24px;
+    box-shadow: var(--prdo-shadow-sm);
+    transition: var(--prdo-transition);
+    border-top: 3px solid var(--prdo-navy);
+}
+
+.prdo-app-card:hover {
+    border-top-color: var(--prdo-accent);
+    transform: translateY(-6px);
+    box-shadow: var(--prdo-shadow-hover);
+}
+
+.prdo-app-card h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--prdo-ink);
+    margin-bottom: 12px;
+}
+
+.prdo-app-card p {
+    font-size: 14.5px;
+    color: var(--prdo-muted);
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* ============================================================
+   MANUFACTURING INFRASTRUCTURE & PROCESS
+   (Exact styling inspiration from about.php .ldh-facility-card)
+   ============================================================ */
+.prdo-process-flow {
+    background: #ffffff;
+    border: 1px solid var(--prdo-line);
+    border-radius: var(--prdo-radius);
+    padding: 24px 28px;
+    box-shadow: var(--prdo-shadow-sm);
+    margin-bottom: 40px;
+}
+
+.prdo-process-flow-label {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--prdo-navy);
+    margin-bottom: 12px;
+    display: block;
+}
+
+.prdo-process-steps-wrap {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.prdo-process-step {
+    display: inline-flex;
+    align-items: center;
+    background: var(--prdo-wash);
+    border: 1px solid var(--prdo-border-soft);
+    color: var(--prdo-ink);
+    font-weight: 600;
+    font-size: 13.5px;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+.prdo-process-arrow {
+    color: var(--prdo-accent);
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.prdo-facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.prdo-facility-card {
+    position: relative;
+    background: #ffffff;
+    border: 1px solid var(--prdo-line);
+    border-radius: var(--prdo-radius);
+    padding: 32px 24px;
+    box-shadow: var(--prdo-shadow-sm);
+    transition: var(--prdo-transition);
+    display: flex;
+    flex-direction: column;
+}
+
+.prdo-facility-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--prdo-accent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s ease;
+}
+
+.prdo-facility-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--prdo-shadow-hover);
+    border-color: rgba(245, 130, 31, 0.3);
+}
+
+.prdo-facility-card:hover::before {
+    transform: scaleX(1);
+}
+
+.prdo-facility-num {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    color: var(--prdo-accent);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    display: block;
+}
+
+.prdo-facility-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: var(--prdo-accent-light);
+    color: var(--prdo-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin-bottom: 18px;
+    transition: var(--prdo-transition);
+}
+
+.prdo-facility-card:hover .prdo-facility-icon {
+    background: var(--prdo-accent);
+    color: #ffffff;
+    transform: scale(1.08);
+}
+
+.prdo-facility-card h4 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--prdo-ink);
+    margin-bottom: 12px;
+}
+
+.prdo-facility-card p {
+    font-size: 14.5px;
+    color: var(--prdo-muted);
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* ============================================================
+   ROLLING & HEAT TREATMENT SPLIT
+   ============================================================ */
+.prdo-duo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.prdo-duo-card {
+    background: #ffffff;
+    border: 1px solid var(--prdo-line);
+    border-radius: var(--prdo-radius);
+    padding: 38px 34px;
+    box-shadow: var(--prdo-shadow-sm);
+    transition: var(--prdo-transition);
+    position: relative;
+    border-left: 4px solid var(--prdo-navy);
+}
+
+.prdo-duo-card.accent-card {
+    border-left-color: var(--prdo-accent);
+}
+
+.prdo-duo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--prdo-shadow-hover);
+}
+
+.prdo-duo-card h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--prdo-ink);
+    margin-bottom: 16px;
+}
+
+.prdo-duo-card p {
+    font-size: 15.5px;
+    line-height: 1.8;
+    color: #44474d;
+    margin-bottom: 16px;
+}
+
+.prdo-duo-card p:last-child {
+    margin-bottom: 0;
+}
+
+/* ============================================================
+   METALLURGICAL TESTING LABS
+   ============================================================ */
+.prdo-testing-box {
+    background: #ffffff;
+    border: 1px solid var(--prdo-line);
+    border-radius: var(--prdo-radius);
+    padding: 40px;
+    box-shadow: var(--prdo-shadow);
+}
+
+.prdo-testing-box p {
+    font-size: 16px;
+    color: #44474d;
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+.prdo-testing-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin-bottom: 28px;
+}
+
+.prdo-test-chip {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--prdo-wash);
+    border: 1px solid var(--prdo-border-soft);
+    padding: 12px 16px;
+    border-radius: var(--prdo-radius-sm);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--prdo-navy);
+    transition: var(--prdo-transition);
+}
+
+.prdo-test-chip i {
+    color: var(--prdo-accent);
+    font-size: 16px;
+}
+
+.prdo-test-chip:hover {
+    background: var(--prdo-navy);
+    color: #ffffff;
+    border-color: var(--prdo-navy);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(35, 52, 107, 0.15);
+}
+
+.prdo-test-chip:hover i {
+    color: #ffffff;
+}
+
+/* ============================================================
+   WHY WORK WITH US (Ref: about.php .counter-new-design)
+   ============================================================ */
+.prdo-why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.prdo-why-card {
+    background: #ffffff;
+    border: 1px solid var(--prdo-line);
+    border-radius: var(--prdo-radius);
+    padding: 34px 26px;
+    box-shadow: var(--prdo-shadow-sm);
+    transition: var(--prdo-transition);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.prdo-why-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--prdo-shadow-hover);
+    border-color: var(--prdo-accent);
+}
+
+.prdo-why-icon-wrap {
+    width: 58px;
+    height: 58px;
+    border-radius: 14px;
+    background: var(--prdo-navy-light);
+    color: var(--prdo-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    transition: var(--prdo-transition);
+}
+
+.prdo-why-card:hover .prdo-why-icon-wrap {
+    background: var(--prdo-accent);
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.prdo-why-card h4 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--prdo-ink);
+    margin-bottom: 12px;
+}
+
+.prdo-why-card p {
+    font-size: 14.5px;
+    color: var(--prdo-muted);
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* ============================================================
+   MODERN FAQ SECTION
+   ============================================================ */
+.prdo-faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.prdo-faq-item {
+    background: #ffffff;
+    border: 1px solid var(--prdo-line);
+    border-radius: var(--prdo-radius-sm);
+    margin-bottom: 14px;
+    transition: var(--prdo-transition);
+    overflow: hidden;
+}
+
+.prdo-faq-item:hover {
+    border-color: rgba(245, 130, 31, 0.4);
+    box-shadow: var(--prdo-shadow-sm);
+}
+
+.prdo-faq-item summary {
+    padding: 20px 24px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16.5px;
+    color: var(--prdo-ink);
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+
+.prdo-faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.prdo-faq-item summary .faq-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--prdo-wash);
+    color: var(--prdo-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 400;
+    transition: transform 0.3s ease, background 0.3s ease;
+    flex-shrink: 0;
+    margin-left: 16px;
+}
+
+.prdo-faq-item[open] summary .faq-icon {
+    transform: rotate(45deg);
+    background: var(--prdo-accent);
+    color: #ffffff;
+}
+
+.prdo-faq-answer {
+    padding: 0 24px 22px;
+    color: #4b5056;
+    font-size: 15.5px;
+    line-height: 1.8;
+    border-top: 1px solid var(--prdo-border-soft);
+    margin-top: 4px;
+    padding-top: 16px;
+}
+
+/* ============================================================
+   CALL TO ACTION CARD: "Tell Us What Your Component Needs"
+   ============================================================ */
+.prdo-cta-box {
+    background: linear-gradient(135deg, #23346b 0%, #152247 100%);
+    color: #ffffff;
+    border-radius: var(--prdo-radius);
+    padding: 48px 45px;
+    box-shadow: var(--prdo-shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+.prdo-cta-box::after {
+    content: "";
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(245, 130, 31, 0.25) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.prdo-cta-box h3 {
+    font-size: 1.85rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 14px;
+}
+
+.prdo-cta-box p {
+    font-size: 16.5px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 820px;
+    margin-bottom: 12px;
+}
+
+.prdo-cta-box p:last-child {
+    margin-bottom: 0;
+}
+
+/* ============================================================
+   EMBEDDED PRODUCT ENQUIRY FORM (include/product-enquiry-form.php)
+   ============================================================ */
+.product-enquiry {
+    max-width: 860px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--prdo-ink);
+}
+
+.product-enquiry * {
+    box-sizing: border-box;
+}
+
+.product-enquiry .pe-card {
+    background: #ffffff;
+    border: 1px solid var(--prdo-line);
+    border-radius: var(--prdo-radius);
+    box-shadow: var(--prdo-shadow);
+    overflow: hidden;
+    position: relative;
+}
+
+.product-enquiry .pe-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--prdo-accent), var(--prdo-navy));
+}
+
+.product-enquiry .pe-head {
+    padding: 38px 36px 14px;
+    text-align: center;
+}
+
+.product-enquiry .pe-head h3 {
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: var(--prdo-ink);
+    margin: 0 0 10px;
+}
+
+.product-enquiry .pe-head p {
+    color: var(--prdo-muted);
+    font-size: 15.5px;
+    margin: 0 auto;
+    max-width: 580px;
+}
+
+.product-enquiry form {
+    padding: 16px 36px 36px;
+}
+
+.product-enquiry .pe-g2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 18px;
+}
+
+.product-enquiry .pe-f {
+    margin-bottom: 18px;
+}
+
+.product-enquiry label {
+    display: block;
+    font-size: 12.5px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--prdo-navy);
+    margin: 0 0 8px;
+}
+
+.product-enquiry label .pe-req {
+    color: var(--prdo-accent);
+}
+
+.product-enquiry input,
+.product-enquiry select,
+.product-enquiry textarea {
+    width: 100%;
+    padding: 13px 16px;
+    border: 1px solid var(--prdo-line);
+    background: var(--prdo-wash);
+    font-family: inherit;
+    font-size: 15px;
+    color: var(--prdo-ink);
+    border-radius: var(--prdo-radius-sm);
+    transition: var(--prdo-transition);
+}
+
+.product-enquiry input:focus,
+.product-enquiry select:focus,
+.product-enquiry textarea:focus {
+    outline: none;
+    border-color: var(--prdo-accent);
+    background: #ffffff;
+    box-shadow: 0 0 0 4px var(--prdo-accent-glow);
+}
+
+.product-enquiry textarea {
+    min-height: 95px;
+    resize: vertical;
+}
+
+.product-enquiry .pe-actions {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.product-enquiry button.pe-btn {
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    background: var(--prdo-accent) !important;
+    color: #ffffff !important;
+    border: 0 !important;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+    padding: 15px 44px !important;
+    font-family: inherit;
+    font-size: 14.5px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: var(--prdo-radius-sm);
+    box-shadow: 0 8px 20px rgba(245, 130, 31, 0.3);
+    transition: var(--prdo-transition);
+}
+
+.product-enquiry button.pe-btn:hover {
+    background: var(--prdo-accent-dark) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 26px rgba(245, 130, 31, 0.38);
+}
+
+.product-enquiry .pe-alt {
+    font-size: 14.5px;
+    color: var(--prdo-muted);
+    margin-bottom: 0;
+}
+
+.product-enquiry .pe-alt a {
+    color: var(--prdo-navy);
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.product-enquiry .pe-alt a:hover {
+    color: var(--prdo-accent);
+}
+
+.product-enquiry .pe-results {
+    padding: 14px 18px;
+    margin-bottom: 20px;
+    font-size: 14.5px;
+    border-radius: var(--prdo-radius-sm);
+}
+
+.product-enquiry label.error {
+    display: block;
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: 600;
+    font-size: 13px;
+    color: #c0392b;
+    margin: 6px 0 0;
+}
+
+/* ============================================================
+   RESPONSIVE BREAKPOINTS
+   ============================================================ */
+@media (max-width: 1199.98px) {
+    .prdo-grades-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .prdo-industries-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 991.98px) {
+    .prdo-section {
+        padding: 55px 0;
+    }
+
+    .prdo-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .prdo-forms-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .prdo-grades-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .prdo-facilities-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .prdo-industries-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .prdo-app-spotlight-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .prdo-why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .prdo-testing-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .prdo-title {
+        font-size: 1.95rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .prdo-section {
+        padding: 45px 0;
+    }
+
+    .prdo-systems-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .prdo-duo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .prdo-grades-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .prdo-industries-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .prdo-testing-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .prdo-section-bg-image {
+        background-attachment: scroll;
+        padding: 55px 0;
+    }
+
+    .prdo-glass-panel,
+    .prdo-callout-panel,
+    .prdo-grades-box,
+    .prdo-testing-box,
+    .prdo-cta-box {
+        padding: 26px 20px;
+    }
+
+    .product-enquiry form,
+    .product-enquiry .pe-head {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .product-enquiry .pe-g2 {
+        grid-template-columns: 1fr;
+    }
+
+    .product-enquiry button.pe-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .prdo-title {
+        font-size: 1.6rem;
+    }
+
+    .prdo-stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .prdo-facilities-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .prdo-app-spotlight-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .prdo-why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .prdo-grades-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .prdo-industries-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .prdo-testing-grid {
+        grid-template-columns: 1fr;
+    }
+}
