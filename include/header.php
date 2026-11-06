@@ -538,6 +538,7 @@ EOT;
 	@media (min-width: 992px){
 		.navbar .nav-item.dropdown:hover > .dropdown-menu{
 			display: block;
+      width: 320px;
 		}
 	}
 	.hamburger-menu .nav-item.dropdown .dropdown-menu{
