@@ -48,10 +48,34 @@
             'image_alt' => 'Ludhiana Steel Rolling Mills - Careers',
         ),
         'alloy-steel-manufacturer.php' => array(
-            'title' => 'Alloy Steel Manufacturer in India - EN18, EN19, EN24, SAE 4140, SAE 4340, SAE 8620 Alloy Steel Round Bars, RCS & Peeled Bars Suppliers',
-            'description' => 'Ludhiana Steel Rolling Mills is an alloy steel manufacturer in India since 1938. Alloy steel round bars (16-230mm), RCS bars (28-140mm) & peeled bars (18-80mm) in EN18, EN19, EN24, EN36, SAE 4140, SAE 4340, SAE 8620, 42CrMo4 and more grades.',
-            'keywords' => 'alloy steel manufacturer in india, alloy steel suppliers in india, alloy steel round bar manufacturer, en19 alloy steel manufacturer india, sae 4140 steel supplier india, en24 alloy steel manufacturer, sae 8620 steel supplier, 42crmo4 steel manufacturer india, alloy steel rcs bar manufacturer',
+            'title' => 'Alloy Steel Manufacturer in India - Round Bars & Billets Supplier - Quenched and Tempered Alloy Steel Bars',
+            'description' => 'Leading alloy steel manufacturer in India offering forging quality alloy steel billets, RCS bars, quenched and tempered bars and automotive grade alloy steel round bars. Get a free quote now for all types of steel.',
+            'keywords' => 'alloy steel manufacturer in india, alloy steel suppliers in india, alloy steel round bar manufacturer in india, induction furnace alloy steel billet suppliers india, quenched and tempered alloy steel bars, automotive grade alloy steel raw material supplier',
             'image_alt' => 'Ludhiana Steel Rolling Mills - Alloy Steel Round Bars',
+        ),
+        'mn-mo-steel-manufacturer.php' => array(
+            'title' => 'Mn-Mo Steel Manufacturer & Supplier in India - En19, 42CrMo4 - Steel Round Bar',
+            'description' => 'Trusted Mn-Mo steel manufacturer in India providing high-quality en19 alloy steel, 42crmo4 steel round bars and chrome moly round bars for automotive and forging industries Get a quote now.',
+            'keywords' => 'en19 alloy steel manufacturer india, 42crmo4 steel round bar supplier india, sae 4140 chrome moly round bars, auto component forging raw material suppliers in india, forging quality steel raw material suppliers',
+            'image_alt' => 'Ludhiana Steel Rolling Mills - Mn-Mo Steel Round Bars',
+        ),
+        'chromium-manganese-steel-manufacturer.php' => array(
+            'title' => 'Chromium Manganese Steel Manufacturer India - 20MnCr5, EN353 - Steel Round Bar Manufacturer',
+            'description' => 'Premier chromium manganese steel manufacturer in India supplying 20MnCr5steel round bars, EN353 steel and case hardening steel for gear and transmission shaft manufacturing.',
+            'keywords' => '20mncr5 steel round bar manufacturer, en353 steel manufacturer, sae 8620 case hardening steel india, steel billets for gear and transmission shaft manufacturing india, alloy steel rcs bar manufacturers in india',
+            'image_alt' => 'Ludhiana Steel Rolling Mills - Chromium Manganese Steel Round Bars',
+        ),
+        'carbon-steel-manufacturer.php' => array(
+            'title' => 'Carbon Steel Manufacturer in India - SAE 1018, C45 Round Bars - Carbon Steel Billets Manufacturers',
+            'description' => 'Top carbon steel manufacturer in India offering carbon steel billets, round bars including sae 1018 and c45 grade from a leading steel manufacturing company and rolling mill. Get a free quote for all types of carbon steel.',
+            'keywords' => 'carbon steel manufacturers in india, carbon steel round bar supplier, sae 1018 carbon steel round bars, c45 carbon steel round bar supplier, carbon steel billets manufacturers in india, steel manufacturing company',
+            'image_alt' => 'Ludhiana Steel Rolling Mills - Carbon Steel Round Bars & Billets',
+        ),
+        'carbon-manganese-steel-manufacturer.php' => array(
+            'title' => 'Carbon Manganese Steel Manufacturer India - S355J2, ST52-3 Round Bar and Medium Carbon Steel Round Bar Suppliers',
+            'description' => 'Reliable carbon manganese steel manufacturer in India supplying S355J2 round bars, ST52-3 steel bars, medium carbon steel round bars and agricultural implement raw materials.',
+            'keywords' => 'medium carbon steel round bar, carbon steel in india, carbon steel suppliers',
+            'image_alt' => 'Ludhiana Steel Rolling Mills - Carbon Manganese Steel Round Bars',
         ),
         '404.php' => array(
             'title' => 'Page Not Found (404) - Ludhiana Steel Rolling Mills',
@@ -63,7 +87,21 @@
 
     $current_page = basename($_SERVER['SCRIPT_NAME']);
     $meta = isset($page_meta[$current_page]) ? $page_meta[$current_page] : $page_meta['index.php'];
-    $canonical_url = ($current_page === 'index.php') ? BASEURL : BASEURL . $current_page;
+    // Product pages are served on clean URLs (see .htaccess): /alloy-steel-manufacturer
+    $clean_url_pages = array(
+        'alloy-steel-manufacturer.php',
+        'mn-mo-steel-manufacturer.php',
+        'chromium-manganese-steel-manufacturer.php',
+        'carbon-steel-manufacturer.php',
+        'carbon-manganese-steel-manufacturer.php',
+    );
+    if ($current_page === 'index.php') {
+        $canonical_url = BASEURL;
+    } elseif (in_array($current_page, $clean_url_pages)) {
+        $canonical_url = BASEURL . basename($current_page, '.php');
+    } else {
+        $canonical_url = BASEURL . $current_page;
+    }
     $og_image = BASEURL . 'images/lsrm/logo-w-b.png';
 
     $page_schema = array();
