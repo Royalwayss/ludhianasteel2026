@@ -90,10 +90,20 @@
     // Product pages are served on clean URLs (see .htaccess): /alloy-steel-manufacturer
     $clean_url_pages = array(
         'alloy-steel-manufacturer.php',
-        'mn-mo-steel-manufacturer.php',
-        'chromium-manganese-steel-manufacturer.php',
+        'ball-bearing-steel-manufacturer.php',
+        'boron-steel-manufacturer.php',
         'carbon-steel-manufacturer.php',
         'carbon-manganese-steel-manufacturer.php',
+        'chromium-manganese-steel-manufacturer.php',
+        'cr-mn-si-steel-manufacturer.php',
+        'cr-mo-steel-manufacturer.php',
+        'cr-mo-v-steel-manufacturer.php',
+        'martensitic-stainless-steel-manufacturer.php',
+        'mn-mo-steel-manufacturer.php',
+        'nickel-chromium-moly-steel-manufacturer.php',
+        'spring-steel-manufacturer.php',
+        'sulphur-steel-manufacturer.php',
+        'tool-and-die-steel-manufacturer.php',
     );
     if ($current_page === 'index.php') {
         $canonical_url = BASEURL;
@@ -555,51 +565,174 @@ EOT;
 	}
 
 	/* Products dropdown menu */
-	.navbar .nav-item.dropdown .dropdown-menu{
-		border: 0;
-		border-radius: 4px;
-		box-shadow: 0 10px 30px rgba(0,0,0,.15);
-		padding: 8px 0;
-		margin-top: 0;
+	.navbar .navbar-nav .nav-item.dropdown{
+		position: relative;
 	}
-	.navbar .nav-item.dropdown .dropdown-item{
-		padding: 10px 22px;
-		font-size: 15px;
-		color: #252523;
+	.navbar.navbar-expand-lg .navbar-nav .nav-item.dropdown > .dropdown-menu{
+		box-sizing: border-box;
+		border: 1px solid #e5e7eb;
+		border-top: 3px solid #f5821f;
+		border-radius: 12px;
+		box-shadow: 0 22px 48px rgba(15, 23, 42, 0.16);
+		padding: 14px 16px 16px;
+		margin: 0;
+		background: #ffffff;
+		animation: none;
+		-webkit-animation: none;
+	}
+	.navbar .navbar-nav .nav-item.dropdown .dropdown-menu *,
+	.navbar .navbar-nav .nav-item.dropdown .dropdown-menu *::before{
+		box-sizing: border-box;
+	}
+	.navbar .navbar-nav .nav-item.dropdown .dropdown-menu > li{
+		min-width: 0;
+	}
+	.navbar .navbar-nav .nav-item.dropdown .lsrm-dd-header{
+		grid-column: 1 / -1;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 2px 6px 10px;
+		margin-bottom: 6px;
+		border-bottom: 1px solid #eef0f4;
+	}
+	.navbar .navbar-nav .nav-item.dropdown .lsrm-dd-title{
+		font-size: 11.5px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: #23346b;
+	}
+	.navbar .navbar-nav .nav-item.dropdown .lsrm-dd-all{
+		font-size: 12.5px;
+		font-weight: 700;
+		color: #f5821f;
+		text-decoration: none;
+		display: inline-flex;
+		align-items: center;
+		gap: 4px;
+		transition: color 0.2s ease;
+	}
+	.navbar .navbar-nav .nav-item.dropdown .lsrm-dd-all:hover{
+		color: #d9701a;
+	}
+	.navbar .navbar-nav .nav-item.dropdown .dropdown-item{
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		width: 100%;
+		padding: 9px 10px;
+		font-size: 13.5px;
+		font-weight: 600;
+		line-height: 1.35;
+		color: #23346b;
+		border-radius: 7px;
 		white-space: normal;
+		word-break: break-word;
+		transition: background-color 0.2s ease, color 0.2s ease;
 	}
-	.navbar .nav-item.dropdown .dropdown-item:hover,
-	.navbar .nav-item.dropdown .dropdown-item:focus{
-		background: #f7f6f3;
+	.navbar .navbar-nav .nav-item.dropdown .dropdown-item::before{
+		content: "";
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+		background: #f5821f;
+		opacity: 0.55;
+		flex-shrink: 0;
+		transition: opacity 0.2s ease, transform 0.2s ease;
+	}
+	.navbar .navbar-nav .nav-item.dropdown .dropdown-item:hover,
+	.navbar .navbar-nav .nav-item.dropdown .dropdown-item:focus{
+		background-color: #fff4ea;
 		color: #f5821f;
 	}
+	.navbar .navbar-nav .nav-item.dropdown .dropdown-item:hover::before,
+	.navbar .navbar-nav .nav-item.dropdown .dropdown-item:focus::before{
+		opacity: 1;
+		transform: scale(1.25);
+	}
 	@media (min-width: 992px){
-		.navbar .nav-item.dropdown:hover > .dropdown-menu{
-			display: block;
-      width: 320px;
+		.navbar.navbar-expand-lg .navbar-nav .nav-item.dropdown > .dropdown-menu,
+		.navbar.navbar-expand-lg .navbar-nav .nav-item.dropdown.open > .dropdown-menu{
+			display: grid !important;
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+			gap: 4px 10px;
+			width: 760px;
+			max-width: calc(100vw - 40px);
+			left: 50%;
+			right: auto;
+			top: calc(100% - 34px);
+			margin-top: 0 !important;
+			transform: translate3d(-50%, 8px, 0);
+			opacity: 0;
+			visibility: hidden;
+			pointer-events: none;
+			will-change: opacity, transform;
+			animation: none !important;
+			-webkit-animation: none !important;
+			transition: opacity 0.22s cubic-bezier(0.16, 1, 0.3, 1) 0.12s, transform 0.22s cubic-bezier(0.16, 1, 0.3, 1) 0.12s, visibility 0.22s 0.12s;
+		}
+		.navbar.navbar-expand-lg .navbar-nav .nav-item.dropdown > .dropdown-menu::before{
+			content: "";
+			position: absolute;
+			top: -36px;
+			left: 0;
+			right: 0;
+			height: 36px;
+		}
+		.navbar.navbar-expand-lg .navbar-nav .nav-item.dropdown:hover > .dropdown-menu,
+		.navbar.navbar-expand-lg .navbar-nav .nav-item.dropdown > .dropdown-menu:hover{
+			opacity: 1;
+			visibility: visible;
+			pointer-events: auto;
+			transform: translate3d(-50%, 0, 0);
+			transition-delay: 0s;
+		}
+	}
+	@media (min-width: 992px) and (max-width: 1199px){
+		.navbar.navbar-expand-lg .navbar-nav .nav-item.dropdown > .dropdown-menu{
+			width: 680px;
 		}
 	}
 	.hamburger-menu .nav-item.dropdown .dropdown-menu{
-		position: static;
+		position: static !important;
 		float: none;
+		transform: none !important;
 		box-shadow: none;
+		border: 0;
+		border-top: 0 !important;
+		border-radius: 0;
 		background: transparent;
-		padding-left: 18px;
+		padding: 4px 0 10px 16px;
+		margin: 0;
 		display: none;
+		width: auto !important;
+		grid-template-columns: none !important;
+		opacity: 1 !important;
+		visibility: visible !important;
+		pointer-events: auto !important;
 	}
+	.hamburger-menu .nav-item.dropdown .dropdown-menu.show,
 	.hamburger-menu .nav-item.dropdown.show .dropdown-menu{
-		display: block;
+		display: block !important;
+		/* max-height: 45vh; */
+		overflow-y: auto;
+	}
+	.hamburger-menu .nav-item.dropdown .lsrm-dd-header{
+		display: none !important;
 	}
 	.hamburger-menu .nav-item.dropdown .dropdown-item{
-		color: #ffffff;
-		opacity: .8;
-		font-size: 14px;
-		padding: 8px 0;
-	}
-	.hamburger-menu .nav-item.dropdown .dropdown-item:hover{
+		color: rgba(255, 255, 255, 0.85);
 		opacity: 1;
+		font-size: 14px;
+		font-weight: 500;
+		padding: 7px 8px;
+		border-radius: 6px;
+	}
+	.hamburger-menu .nav-item.dropdown .dropdown-item:hover,
+	.hamburger-menu .nav-item.dropdown .dropdown-item:focus{
 		color: #f5821f;
-		background: transparent;
+		background: rgba(255, 255, 255, 0.06);
 	}
 	</style>
 </head>
@@ -643,13 +776,27 @@ EOT;
                             <li class="nav-item"><a href="about.php" class="nav-link">About</a></li>
 
                             <li class="nav-item dropdown">
-                                <a href="products.php" class="nav-link dropdown-toggle" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+                                <a href="products.php" class="nav-link dropdown-toggle" id="productsDropdown" aria-expanded="false">Products</a>
                                 <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                                    <li class="lsrm-dd-header">
+                                        <span class="lsrm-dd-title">Engineering Steel Grades</span>
+                                        <a href="products.php" class="lsrm-dd-all">View All Products &rarr;</a>
+                                    </li>
                                     <li><a class="dropdown-item" href="alloy-steel-manufacturer.php">Alloy Steel</a></li>
-                                    <li><a class="dropdown-item" href="mn-mo-steel-manufacturer.php">Mn-Mo Steel</a></li>
-                                    <li><a class="dropdown-item" href="chromium-manganese-steel-manufacturer.php">Chromium-Manganese Steel</a></li>
+                                    <li><a class="dropdown-item" href="ball-bearing-steel-manufacturer.php">Ball Bearing Steel</a></li>
+                                    <li><a class="dropdown-item" href="boron-steel-manufacturer.php">Boron Steel</a></li>
                                     <li><a class="dropdown-item" href="carbon-steel-manufacturer.php">Carbon Steel</a></li>
                                     <li><a class="dropdown-item" href="carbon-manganese-steel-manufacturer.php">Carbon-Manganese Steel</a></li>
+                                    <li><a class="dropdown-item" href="chromium-manganese-steel-manufacturer.php">Chromium-Manganese Steel</a></li>
+                                    <li><a class="dropdown-item" href="cr-mn-si-steel-manufacturer.php">Cr-Mn-Si Steel</a></li>
+                                    <li><a class="dropdown-item" href="cr-mo-steel-manufacturer.php">Cr-Mo Steel</a></li>
+                                    <li><a class="dropdown-item" href="cr-mo-v-steel-manufacturer.php">Cr-Mo-V Steel</a></li>
+                                    <li><a class="dropdown-item" href="martensitic-stainless-steel-manufacturer.php">Martensitic Stainless Steel</a></li>
+                                    <li><a class="dropdown-item" href="mn-mo-steel-manufacturer.php">Mn-Mo Steel</a></li>
+                                    <li><a class="dropdown-item" href="nickel-chromium-moly-steel-manufacturer.php">Nickel-Chromium-Moly Steel</a></li>
+                                    <li><a class="dropdown-item" href="spring-steel-manufacturer.php">Spring Steel</a></li>
+                                    <li><a class="dropdown-item" href="sulphur-steel-manufacturer.php">Sulphur Steel</a></li>
+                                    <li><a class="dropdown-item" href="tool-and-die-steel-manufacturer.php">Tool &amp; Die Steel</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item"><a href="infrastructure.php" class="nav-link">Infrastructure</a></li>
@@ -677,13 +824,24 @@ EOT;
                                     <li class="nav-item"><a href="about.php" class="nav-link">About</a></li>
 
                                     <li class="nav-item dropdown">
-                                        <a href="products.php" class="nav-link dropdown-toggle" id="productsDropdownMobile" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+                                        <a href="products.php" class="nav-link dropdown-toggle" id="productsDropdownMobile" role="button" aria-expanded="false">Products</a>
                                         <ul class="dropdown-menu" aria-labelledby="productsDropdownMobile">
+                                            <li><a class="dropdown-item" href="products.php">All Products</a></li>
                                             <li><a class="dropdown-item" href="alloy-steel-manufacturer.php">Alloy Steel</a></li>
-                                            <li><a class="dropdown-item" href="mn-mo-steel-manufacturer.php">Mn-Mo Steel</a></li>
-                                            <li><a class="dropdown-item" href="chromium-manganese-steel-manufacturer.php">Chromium-Manganese Steel</a></li>
+                                            <li><a class="dropdown-item" href="ball-bearing-steel-manufacturer.php">Ball Bearing Steel</a></li>
+                                            <li><a class="dropdown-item" href="boron-steel-manufacturer.php">Boron Steel</a></li>
                                             <li><a class="dropdown-item" href="carbon-steel-manufacturer.php">Carbon Steel</a></li>
                                             <li><a class="dropdown-item" href="carbon-manganese-steel-manufacturer.php">Carbon-Manganese Steel</a></li>
+                                            <li><a class="dropdown-item" href="chromium-manganese-steel-manufacturer.php">Chromium-Manganese Steel</a></li>
+                                            <li><a class="dropdown-item" href="cr-mn-si-steel-manufacturer.php">Cr-Mn-Si Steel</a></li>
+                                            <li><a class="dropdown-item" href="cr-mo-steel-manufacturer.php">Cr-Mo Steel</a></li>
+                                            <li><a class="dropdown-item" href="cr-mo-v-steel-manufacturer.php">Cr-Mo-V Steel</a></li>
+                                            <li><a class="dropdown-item" href="martensitic-stainless-steel-manufacturer.php">Martensitic Stainless Steel</a></li>
+                                            <li><a class="dropdown-item" href="mn-mo-steel-manufacturer.php">Mn-Mo Steel</a></li>
+                                            <li><a class="dropdown-item" href="nickel-chromium-moly-steel-manufacturer.php">Nickel-Chromium-Moly Steel</a></li>
+                                            <li><a class="dropdown-item" href="spring-steel-manufacturer.php">Spring Steel</a></li>
+                                            <li><a class="dropdown-item" href="sulphur-steel-manufacturer.php">Sulphur Steel</a></li>
+                                            <li><a class="dropdown-item" href="tool-and-die-steel-manufacturer.php">Tool &amp; Die Steel</a></li>
                                         </ul>
                                     </li>
                                     

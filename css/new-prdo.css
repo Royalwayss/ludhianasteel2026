@@ -46,7 +46,7 @@ html {
    ============================================================ */
 .product-page {
     font-size: 16px;
-    line-height: 1.8;
+    line-height: 1.4;
     color: var(--prdo-ink);
     background-color: #ffffff;
 }
@@ -121,6 +121,7 @@ html {
 }
 
 @media (max-width: 767.98px) {
+
     .prdo-glass-panel ul,
     .prdo-callout-panel ul {
         grid-template-columns: 1fr;

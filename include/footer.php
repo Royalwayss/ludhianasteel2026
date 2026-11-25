@@ -130,6 +130,42 @@
      <script type="text/javascript" src="js/vendors.min.js"></script>
      <script async defer src="https://maps.googleapis.com/maps/api/js?key=<YOUR_API_KEY>&callback=initMap"></script>
      <script type="text/javascript" src="js/main.js?v=2.0"></script>
+<!-- Hamburger menu dropdown toggle (must load AFTER main.js) -->
+<script>
+(function($){
+    // Wait for DOM + all scripts
+    $(function(){
+        var $hamMenu = $('.push-menu .hamburger-menu');
+        if(!$hamMenu.length) return;
+
+        // Direct binding on the hamburger-menu dropdown toggle
+        $hamMenu.find('.nav-item.dropdown > .nav-link').on('click touchend', function(e){
+            e.preventDefault();
+            e.stopPropagation();
+            e.stopImmediatePropagation();
+            var $parent = $(this).closest('.dropdown');
+            var $ddMenu = $parent.children('.dropdown-menu');
+            var isOpen = $ddMenu.hasClass('show');
+            // Close any other open dropdowns first
+            $hamMenu.find('.nav-item.dropdown').not($parent).removeClass('show open')
+                .children('.dropdown-menu').removeClass('show');
+            $parent.toggleClass('show', !isOpen).toggleClass('open', !isOpen);
+            $ddMenu.toggleClass('show', !isOpen);
+            $(this).attr('aria-expanded', !isOpen);
+            return false;
+        });
+
+        // Unbind main.js touchstart handler from hamburger dropdown only
+        $hamMenu.find('.nav-item.dropdown').off('mouseenter touchstart mouseleave');
+
+        // Close dropdown when tapping other menu items
+        $hamMenu.find('.menu-item-list > .nav-item:not(.dropdown) > .nav-link').on('click', function(){
+            $hamMenu.find('.nav-item.dropdown').removeClass('show open')
+                .children('.dropdown-menu').removeClass('show');
+        });
+    });
+})(jQuery);
+</script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <?php if(isset($extra_js) && !empty($extra_js)) { echo $extra_js; } ?>
 <script>
