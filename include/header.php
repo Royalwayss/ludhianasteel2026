@@ -774,8 +774,9 @@ EOT;
                         <ul class="navbar-nav alt-font ls-1px">
                             <li class="nav-item"><a href="<?php echo BASEURL; ?>" class="nav-link">Home</a></li>
                             <li class="nav-item"><a href="about.php" class="nav-link">About</a></li>
+                            <li class="nav-item"><a href="products.php" class="nav-link">Products</a></li>
 
-                            <li class="nav-item dropdown">
+                            <!-- <li class="nav-item dropdown">
                                 <a href="products.php" class="nav-link dropdown-toggle" id="productsDropdown" aria-expanded="false">Products</a>
                                 <ul class="dropdown-menu" aria-labelledby="productsDropdown">
                                     <li class="lsrm-dd-header">
@@ -798,7 +799,7 @@ EOT;
                                     <li><a class="dropdown-item" href="sulphur-steel-manufacturer.php">Sulphur Steel</a></li>
                                     <li><a class="dropdown-item" href="tool-and-die-steel-manufacturer.php">Tool &amp; Die Steel</a></li>
                                 </ul>
-                            </li>
+                            </li> -->
                             <li class="nav-item"><a href="infrastructure.php" class="nav-link">Infrastructure</a></li>
                             <li class="nav-item"><a href="csr.php" class="nav-link">Sustainability</a></li>
 

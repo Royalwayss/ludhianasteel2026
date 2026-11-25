@@ -29,8 +29,8 @@
                     data-shadow-animation="true" data-animation-delay="700">Our <span class="text-highlight">Product
                         Category<span class="bg-base-color h-2px bottom-0px separator-animation"></span></span></h2>
                 <p
-                   style="" data-anime='{"el": "lines", "translateY": [30, 0], "perspective": [400,400], "scale": [1.1, 1], "rotateX": [-80, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                    We are engaged in Manufacturing of Alloy Steel Bars in various grades for Core Industrial
+                   style="" >
+                    We are engaged in Manufacturing of <strong><a href="alloy-steel-manufacturer.php">Alloy Steel Bars</a></strong> in various grades for Core Industrial
                     Development Sector and Engineering applications, Forging Units and Components manufacturers all over
                     the country. The Steel Bars can be forged, machined or directly used.
                 </p>
@@ -129,42 +129,42 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Carbon Steel</td>
+                                    <td><strong><a href="carbon-steel-manufacturer.php">Carbon Steel</a></strong></td>
                                     <td>C15, 15C8, 35C8, C20, C30, C35, C40, C45, Ck45, Ck60, C50, EN8, EN8D, EN9,
                                         EN32B, SAE1008, SAE1010,
                                         SAE1018, SAE1020, SAE1025, SAE1040, SAE1045, SAE1050
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Carbon Manganese Steel</td>
+                                    <td><strong><a href="carbon-manganese-steel-manufacturer.php">Carbon Manganese Steel</a></strong></td>
                                     <td>20MN2, 27MN2, EN14, EN15, 37C15, 28Mn6, SAE1524, ST52-3, ST50-2, S355J2, ASTM
                                         A105</td>
                                 </tr>
                                 <tr>
-                                    <td>Chromium - Manganese Steel</td>
+                                    <td><strong><a href="chromium-manganese-steel-manufacturer.php">Chromium - Manganese Steel</a></strong></td>
                                     <td>16MNCR5, 20MNCR5, 41Cr4, EN18, 34Cr4, 40Cr4B</td>
                                 </tr>
                                 <tr>
-                                    <td>Mn - Mo Steel</td>
+                                    <td><strong><a href="mn-mo-steel-manufacturer.php">Mn - Mo Steel</a></strong></td>
                                     <td>EN16, 35Mn6Mo3</td>
                                 </tr>
                                 <tr>
-                                    <td>Cr - Mo Steel</td>
+                                    <td><strong><a href="cr-mo-steel-manufacturer.php">Cr - Mo Steel</a></strong></td>
                                     <td>SAE4130, SAE4140, EN19, 42CrMo4, 25CrMo4, SCM415, SCM420H, SCM435, F9, F11, F22,
                                         EN40B, 709M40,
                                         708M40, 52CrMo4, EN41B
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Cr - Mo - V Steel</td>
+                                    <td><strong><a href="cr-mo-v-steel-manufacturer.php">Cr - Mo - V Steel</a></strong></td>
                                     <td>EN47, SAE6150, B16, 51CrV4, 52CrMoV4</td>
                                 </tr>
                                 <tr>
-                                    <td>Cr - Mn - Si Steel</td>
+                                    <td><strong><a href="cr-mn-si-steel-manufacturer.php">Cr - Mn - Si Steel</a></strong></td>
                                     <td>38XC, 30XСA</td>
                                 </tr>
                                 <tr>
-                                    <td>Nickel Moly Chrome Steel</td>
+                                    <td><strong><a href="nickel-chromium-moly-steel-manufacturer.php">Nickel Moly Chrome Steel</a></strong></td>
                                     <td>EN24, EN25, EN26, EN30B, EN36, EN36A, EN36B, EN36C, EN335, EN351, EN353, EN354,  EN39B,
                                         SAE8620, SAE8617,
                                         SAE8622, SAE4320, SAE4340, 20X2H4A, 12X2H4A, 30CrNiMo8, 31Ni10Cr3Mo6,
@@ -173,27 +173,27 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Ball Bearing Steel</td>
+                                    <td><strong><a href="ball-bearing-steel-manufacturer.php">Ball Bearing Steel</a></strong></td>
                                     <td>EN31, SAE52100</td>
                                 </tr>
                                 <tr>
-                                    <td>Boron Steel</td>
+                                    <td><strong><a href="boron-steel-manufacturer.php">Boron Steel</a></strong></td>
                                     <td>SAE15B41, SAE15B25, SAE15B35, SAE40B37, SAE15B41H</td>
                                 </tr>
                                 <tr>
-                                    <td>Spring Steel</td>
+                                    <td><strong><a href="spring-steel-manufacturer.php">Spring Steel</a></strong></td>
                                     <td>EN45, EN45A, SUP9, SUP11A, 60Si7</td>
                                 </tr>
                                 <tr>
-                                    <td>Sulphur Steel</td>
+                                    <td><strong><a href="sulphur-steel-manufacturer.php">Sulphur Steel</a></strong></td>
                                     <td>EN1A, EN8M, EN8DM, EN15AM, SAE1137, SAE1141</td>
                                 </tr>
                                 <tr>
-                                    <td>Martensitic Stainless Steel</td>
+                                    <td><strong><a href="martensitic-stainless-steel-manufacturer.php">Martensitic Stainless Steel</a></strong></td>
                                     <td>AISI410, AISI420, AISI431</td>
                                 </tr>
                                 <tr>
-                                    <td>Tool & Die Steel</td>
+                                    <td><strong><a href="tool-and-die-steel-manufacturer.php">Tool & Die Steel</a></strong></td>
                                     <td>H11, H13, D2, D3, OHNS, DB6</td>
                                 </tr>
                                 <!-- <tr>
