@@ -1,53 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="https://www.xml-sitemaps.com/css/sitemap.css"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-       <loc>https://www.ludhianasteel.com/</loc>
-       <lastmod>2026-08-14T03:47:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>1.0000</priority>
+    <loc>https://www.ludhianasteel.com/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>1.0</priority>
   </url>
   <url>
-       <loc>https://www.ludhianasteel.com/index.php</loc>
-       <lastmod>2026-08-14T03:47:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+    <loc>https://www.ludhianasteel.com/about.php</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.9</priority>
   </url>
   <url>
-       <loc>https://www.ludhianasteel.com/about.php</loc>
-       <lastmod>2026-08-14T03:47:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+    <loc>https://www.ludhianasteel.com/products.php</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.9</priority>
   </url>
   <url>
-       <loc>https://www.ludhianasteel.com/products.php</loc>
-       <lastmod>2026-08-14T03:47:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+    <loc>https://www.ludhianasteel.com/infrastructure.php</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.9</priority>
   </url>
   <url>
-       <loc>https://www.ludhianasteel.com/infrastructure.php</loc>
-       <lastmod>2026-08-14T03:47:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+    <loc>https://www.ludhianasteel.com/csr.php</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.9</priority>
   </url>
   <url>
-       <loc>https://www.ludhianasteel.com/csr.php</loc>
-       <lastmod>2026-08-14T03:47:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+    <loc>https://www.ludhianasteel.com/contact.php</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.9</priority>
   </url>
   <url>
-       <loc>https://www.ludhianasteel.com/contact.php</loc>
-       <lastmod>2026-08-14T03:47:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+    <loc>https://www.ludhianasteel.com/career.php</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.9</priority>
   </url>
   <url>
-       <loc>https://www.ludhianasteel.com/career.php</loc>
-       <lastmod>2026-08-14T03:47:17+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+    <loc>https://www.ludhianasteel.com/alloy-steel-manufacturer.php</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.ludhianasteel.com/carbon-steel-manufacturer.php</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.ludhianasteel.com/carbon-manganese-steel-manufacturer.php</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.ludhianasteel.com/chromium-manganese-steel-manufacturer.php</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.ludhianasteel.com/mn-mo-steel-manufacturer.php</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.ludhianasteel.com/cr-mo-steel-manufacturer.php</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.ludhianasteel.com/cr-mo-v-steel-manufacturer.php</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.ludhianasteel.com/cr-mn-si-steel-manufacturer.php</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.ludhianasteel.com/nickel-chromium-moly-steel-manufacturer.php</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.ludhianasteel.com/ball-bearing-steel-manufacturer.php</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.ludhianasteel.com/boron-steel-manufacturer.php</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.ludhianasteel.com/spring-steel-manufacturer.php</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.ludhianasteel.com/sulphur-steel-manufacturer.php</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.ludhianasteel.com/martensitic-stainless-steel-manufacturer.php</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.ludhianasteel.com/tool-and-die-steel-manufacturer.php</loc>
+    <lastmod>2026-11-26</lastmod>
+    <priority>0.9</priority>
   </url>
 </urlset>

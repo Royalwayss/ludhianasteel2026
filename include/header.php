@@ -83,6 +83,66 @@
             'keywords' => 'ludhiana steel rolling mills',
             'image_alt' => 'Ludhiana Steel Rolling Mills',
         ),
+        'cr-mo-steel-manufacturer.php' => array(
+            'title' => 'Cr-Mo Steel Manufacturer India - SAE 4140, EN19, 42CrMo4 Bars, SAE 1018 Carbon Steel Round Bars',
+            'description' => 'Leading Cr-Mo alloy steel manufacturer & supplier in India offering SAE 4130, SAE 4140, EN19, 42CrMo4 & 25CrMo4 round bars and billets for forging & automotive. Get high quality SAE 1018 carbon steel round bars in India. Get a quote now.',
+            'keywords' => 'cr mo steel manufacturer india, sae 4140 chrome moly round bars, en19 alloy steel manufacturer india, 42crmo4 steel round bar supplier india, alloy steel round bar manufacturer in india, forging grade alloy steel billets, sae 1018 carbon steel round bars',
+            'image_alt' => 'Ludhiana Steel Rolling Mills - Cr-Mo Steel Round Bars',
+        ),
+        'cr-mo-v-steel-manufacturer.php' => array(
+            'title' => 'Cr-Mo-V Steel Manufacturer India - SAE 6150, EN47, 51CrV4 Bars, SAE 8620 Case Hardening Steel India',
+            'description' => 'Trusted Cr-Mo-V alloy steel manufacturer & supplier in India supplying EN47, SAE 6150, B16, 51CrV4 & 52CrMoV4 steel for heavy-duty forging & engineering. Ludhiana Steel is one of the leading SAE 8620 case hardening steel manufacturer in India.',
+            'keywords' => 'cr mo v steel manufacturer india, sae 6150 steel supplier, en47 alloy steel, 51crv4 steel bars, alloy steel manufacturer in india, forging quality steel raw material suppliers, quenched and tempered alloy steel bars',
+            'image_alt' => 'Ludhiana Steel Rolling Mills - Cr-Mo-V Steel Round Bars',
+        ),
+        'cr-mn-si-steel-manufacturer.php' => array(
+            'title' => 'Cr-Mn-Si Steel Manufacturer India - 38XC, 30XCA Alloy Steel, RCS Bar Suppliers, Alloy Steel Billet Manufacturers',
+            'description' => 'Cr-Mn-Si alloy steel manufacturer & supplier in India offering 38XC and 30XCA grades for high-strength engineering, automotive & forging applications. Ludhiana Steel is one of the best alloy steel RCS bar suppliers & alloy steel billet manufacturers in India.',
+            'keywords' => 'cr mn si steel manufacturer india, 38xc steel supplier, 30xca alloy steel, alloy steel suppliers in india, round bars manufacturer in india, automotive grade alloy steel round bars',
+            'image_alt' => 'Ludhiana Steel Rolling Mills - Cr-Mn-Si Steel Round Bars',
+        ),
+        'nickel-chromium-moly-steel-manufacturer.php' => array(
+            'title' => 'Nickel Chrome Moly Steel Manufacturer India - EN24, EN353, SAE 8620 - Forging Quality Steel Raw Material Suppliers',
+            'description' => 'Nickel Chromium Moly alloy steel manufacturer & supplier in India offering EN24, EN353, SAE 8620, SAE 4340 & 17CrNiMo6 bars for gears, shafts & forging. Get forging quality steel raw material suppliers, raw material suppliers for automotive forging industry, fastener grade alloy steel round bar & steel billets for gear and transmission shaft manufacturing in India',
+            'keywords' => 'nickel chromium moly steel manufacturer india, en353 steel manufacturer, en24 alloy steel round bars manufacturer, sae 8620 case hardening steel india, steel billets for gear and transmission shaft manufacturing india, alloy steel round bar manufacturer in india',
+            'image_alt' => 'Ludhiana Steel Rolling Mills - Nickel-Chromium-Moly Steel Round Bars',
+        ),
+        'ball-bearing-steel-manufacturer.php' => array(
+            'title' => 'Ball Bearing Steel Manufacturer India - EN31, SAE 52100 Bars',
+            'description' => 'Ball bearing steel manufacturer & supplier in India supplying EN31 and SAE 52100 round bars & billets with high wear resistance for bearing & precision industries. Ludhiana Steel is one of the best ball bearing steel manufacturer in India.',
+            'keywords' => 'ball bearing steel manufacturer india, en31 bearing steel supplier, sae 52100 steel bars, alloy steel round bar manufacturer in india, peeled and ground alloy steel round bar suppliers india, steel manufacturer',
+            'image_alt' => 'Ludhiana Steel Rolling Mills - Ball Bearing Steel Round Bars',
+        ),
+        'boron-steel-manufacturer.php' => array(
+            'title' => 'Boron Steel Manufacturer India - SAE 15B41, SAE 40B37, 15B25 - Agricultural Implement Steel Raw Material Suppliers India',
+            'description' => 'Boron alloy steel manufacturer & supplier in India offering SAE 15B41, 15B25, 15B35, 40B37 & 15B41H for fasteners, automotive components & agricultural parts.',
+            'keywords' => 'boron steel manufacturer india, sae 15b41 steel supplier, fastener grade alloy steel round bar suppliers in india, agricultural implement steel raw material suppliers india, alloy steel suppliers in india, round bars suppliers in india',
+            'image_alt' => 'Ludhiana Steel Rolling Mills - Boron Steel Round Bars',
+        ),
+        'spring-steel-manufacturer.php' => array(
+            'title' => 'Spring Steel Manufacturer India - EN45, SUP9, SUP11A, 60Si7 Bars - Automotive Grade Alloy Steel Raw Material Supplier',
+            'description' => 'Spring steel manufacturer & supplier in India offering EN45, EN45A, SUP9, SUP11A & 60Si7 bars and billets for automotive suspension, heavy springs & forging.',
+            'keywords' => 'spring steel manufacturer india, en45 spring steel, sup9 spring steel bars, 60si7 steel supplier, automotive grade alloy steel raw material supplier, alloy steel rolling mills',
+            'image_alt' => 'Ludhiana Steel Rolling Mills - Spring Steel Round Bars',
+        ),
+        'sulphur-steel-manufacturer.php' => array(
+            'title' => 'Sulphur Steel Manufacturer India - EN1A, EN8M, SAE 1137, 1141 - Round Bar Manufacturer',
+            'description' => 'Free-cutting sulphur steel manufacturer & supplier in India supplying EN1A, EN8M, EN8DM, EN15AM, SAE 1137 & SAE 1141 round bars for high-speed machining.',
+            'keywords' => 'sulphur steel manufacturer india, en1a steel bars, en8m free cutting steel, sae 1141 steel supplier, peeled bars manufacturer in india, round bars manufacturer in india',
+            'image_alt' => 'Ludhiana Steel Rolling Mills - Sulphur Steel Round Bars',
+        ),
+        'martensitic-stainless-steel-manufacturer.php' => array(
+            'title' => 'Martensitic Stainless Steel Manufacturer India - AISI 410, 420, 431, Steel Manufacturing Company',
+            'description' => 'Martensitic stainless steel manufacturer & supplier in India offering AISI 410, AISI 420 & AISI 431 bars for shafts, valves, blades & industrial engineering. Ludhiana Steel is one of the best steel manufacturing company in India.',
+            'keywords' => 'martensitic stainless steel manufacturer india, aisi 410 stainless steel bars, aisi 420 steel supplier, aisi 431 round bars, steel manufacturing company, round bars suppliers in india',
+            'image_alt' => 'Ludhiana Steel Rolling Mills - Martensitic Stainless Steel Round Bars',
+        ),
+        'tool-and-die-steel-manufacturer.php' => array(
+            'title' => 'Tool & Die Steel Manufacturer India - H11, H13, D2, D3, OHNS - H13 Steel Manufacturer in India',
+            'description' => 'Tool and die steel manufacturer & supplier in India offering H11, H13, D2, D3, OHNS & DB6 steel for hot/cold work dies, forging dies & industrial tooling. Ludhiana Steel is one of the leading H13 steel manufacturer & suppliers in India.',
+            'keywords' => 'tool and die steel manufacturer india, h13 steel manufacturer in india, d2 tool steel supplier, ohns steel bars, forging quality steel raw material suppliers, alloy steel manufacturer in india',
+            'image_alt' => 'Ludhiana Steel Rolling Mills - Tool & Die Steel Round Bars',
+        ),
     );
 
     $current_page = basename($_SERVER['SCRIPT_NAME']);
