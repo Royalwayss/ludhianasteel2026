@@ -741,42 +741,123 @@
             </p>
         </div>
 
-        <div class="mb-5">
-            <h3 class="lsrm-subheading">Integrated Steel Manufacturing Process</h3>
-
-            <div class="lsrm-process-flow">
-                <span class="lsrm-process-step">Steel Melting</span>
-                <span class="lsrm-process-arrow">&#8594;</span>
-                <span class="lsrm-process-step">Ladle Refining</span>
-                <span class="lsrm-process-arrow">&#8594;</span>
-                <span class="lsrm-process-step">Vacuum Degassing</span>
-                <span class="lsrm-process-arrow">&#8594;</span>
-                <span class="lsrm-process-step">Billet Casting</span>
-                <span class="lsrm-process-arrow">&#8594;</span>
-                <span class="lsrm-process-step">Precision Rolling</span>
-                <span class="lsrm-process-arrow">&#8594;</span>
-                <span class="lsrm-process-step">Finishing / Heat Treatment</span>
-                <span class="lsrm-process-arrow">&#8594;</span>
-                <span class="lsrm-process-step">Inspection &amp; Testing</span>
+        <div class="lsrm-process-showcase mb-5">
+            <div class="lsrm-process-header">
+                <div class="lsrm-process-header-text">
+                    <span class="lsrm-process-badge">End-to-End Steelmaking Route</span>
+                    <h3 class="lsrm-subheading mb-2">Integrated Steel Manufacturing Process</h3>
+                    <p class="mb-0">
+                        Our integrated manufacturing process provides greater control over the steelmaking and processing
+                        route &mdash; from molten steel to finished bar.
+                    </p>
+                </div>
+                <div class="lsrm-process-route-pill">
+                    <span class="lsrm-route-dot"></span>
+                    <span>7-Stage Controlled Pipeline</span>
+                </div>
             </div>
 
-            <p>
-                Our integrated manufacturing process provides greater control over the steelmaking and processing
-                route &mdash; from molten steel to finished bar.
-            </p>
+            <div class="lsrm-process-grid">
+                <div class="lsrm-p-card">
+                    <div class="lsrm-p-top">
+                        <span class="lsrm-p-num">01</span>
+                        <span class="lsrm-p-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c.5 3.5 3 5.5 3 9a3 3 0 0 1-6 0c0-1.6.7-3 1.5-4.2C9 8.5 7 10.7 7 13.5a5 5 0 0 0 10 0c0-4.5-3.5-7.5-5-11.5z"/><path d="M5 21h14"/></svg>
+                        </span>
+                    </div>
+                    <h4 class="lsrm-p-title">Steel Melting</h4>
+                    <span class="lsrm-p-sub">Controlled Furnace Melting</span>
+                    <span class="lsrm-p-connector" aria-hidden="true"></span>
+                </div>
 
-            <p class="mb-3">This helps us maintain control over:</p>
+                <div class="lsrm-p-card">
+                    <div class="lsrm-p-top">
+                        <span class="lsrm-p-num">02</span>
+                        <span class="lsrm-p-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"/><path d="M10 3v5.2L5.2 17a2 2 0 0 0 1.7 3h10.2a2 2 0 0 0 1.7-3L14 8.2V3"/><path d="M7.5 14h9"/></svg>
+                        </span>
+                    </div>
+                    <h4 class="lsrm-p-title">Ladle Refining</h4>
+                    <span class="lsrm-p-sub">Chemistry &amp; Alloy Tuning</span>
+                    <span class="lsrm-p-connector" aria-hidden="true"></span>
+                </div>
 
-            <ul class="lsrm-quality-list">
-                <li>Chemical composition and metallurgy</li>
-                <li>Steel cleanliness</li>
-                <li>Internal quality</li>
-                <li>Dimensional consistency</li>
-                <li>Surface quality</li>
-                <li>Mechanical properties</li>
-                <li>Heat treatment condition</li>
-                <li>Inspection and testing requirements</li>
-            </ul>
+                <div class="lsrm-p-card">
+                    <div class="lsrm-p-top">
+                        <span class="lsrm-p-num">03</span>
+                        <span class="lsrm-p-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 12l4-3"/><path d="M8 16h8"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></svg>
+                        </span>
+                    </div>
+                    <h4 class="lsrm-p-title">Vacuum Degassing</h4>
+                    <span class="lsrm-p-sub">Gas &amp; Inclusion Removal</span>
+                    <span class="lsrm-p-connector" aria-hidden="true"></span>
+                </div>
+
+                <div class="lsrm-p-card">
+                    <div class="lsrm-p-top">
+                        <span class="lsrm-p-num">04</span>
+                        <span class="lsrm-p-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7l8-4 8 4-8 4-8-4z"/><path d="M4 12l8 4 8-4"/><path d="M4 17l8 4 8-4"/></svg>
+                        </span>
+                    </div>
+                    <h4 class="lsrm-p-title">Billet Casting</h4>
+                    <span class="lsrm-p-sub">Continuous Casting Route</span>
+                    <span class="lsrm-p-connector" aria-hidden="true"></span>
+                </div>
+
+                <div class="lsrm-p-card">
+                    <div class="lsrm-p-top">
+                        <span class="lsrm-p-num">05</span>
+                        <span class="lsrm-p-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="3.5"/><circle cx="16" cy="16" r="3.5"/><path d="M3 12h18"/><path d="M12 3v3"/><path d="M12 18v3"/></svg>
+                        </span>
+                    </div>
+                    <h4 class="lsrm-p-title">Precision Rolling</h4>
+                    <span class="lsrm-p-sub">Dimensional Section Sizing</span>
+                    <span class="lsrm-p-connector" aria-hidden="true"></span>
+                </div>
+
+                <div class="lsrm-p-card">
+                    <div class="lsrm-p-top">
+                        <span class="lsrm-p-num">06</span>
+                        <span class="lsrm-p-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 1 1 4 0z"/><path d="M12 15v-5"/></svg>
+                        </span>
+                    </div>
+                    <h4 class="lsrm-p-title">Finishing / Heat Treatment</h4>
+                    <span class="lsrm-p-sub">Target Microstructure</span>
+                    <span class="lsrm-p-connector" aria-hidden="true"></span>
+                </div>
+
+                <div class="lsrm-p-card lsrm-p-card-final">
+                    <div class="lsrm-p-top">
+                        <span class="lsrm-p-num">07</span>
+                        <span class="lsrm-p-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3z"/><path d="M9.5 12l2 2 3.5-4"/></svg>
+                        </span>
+                    </div>
+                    <h4 class="lsrm-p-title">Inspection &amp; Testing</h4>
+                    <span class="lsrm-p-sub">Final Quality Assurance</span>
+                </div>
+            </div>
+
+            <div class="lsrm-process-control-panel">
+                <div class="lsrm-control-title">
+                    <span class="lsrm-control-label">Process Outcomes</span>
+                    <p class="mb-0">This helps us maintain control over:</p>
+                </div>
+                <ul class="lsrm-quality-grid">
+                    <li>Chemical composition and metallurgy</li>
+                    <li>Steel cleanliness</li>
+                    <li>Internal quality</li>
+                    <li>Dimensional consistency</li>
+                    <li>Surface quality</li>
+                    <li>Mechanical properties</li>
+                    <li>Heat treatment condition</li>
+                    <li>Inspection and testing requirements</li>
+                </ul>
+            </div>
         </div>
 
         <div class="row justify-content-center mb-5">

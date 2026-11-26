@@ -26892,7 +26892,7 @@
 
   .hamburger-menu-simple .menu-item-list {
     width: 100%;
-    text-align: left !important;
+    /* text-align: left !important; */
   }
 
   .search-form-wrapper .search-form-box {

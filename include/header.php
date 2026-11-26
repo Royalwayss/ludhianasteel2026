@@ -823,8 +823,9 @@ EOT;
                                 <ul class="menu-item-list fw-500 alt-font p-0 text-center text-lg-start">
                                     <li class="nav-item"><a href="<?php echo BASEURL; ?>" class="nav-link">Home</a></li>
                                     <li class="nav-item"><a href="about.php" class="nav-link">About</a></li>
+                                    <li class="nav-item"><a href="products.php" class="nav-link">Products</a></li>
 
-                                    <li class="nav-item dropdown">
+                                    <!-- <li class="nav-item dropdown">
                                         <a href="products.php" class="nav-link dropdown-toggle" id="productsDropdownMobile" role="button" aria-expanded="false">Products</a>
                                         <ul class="dropdown-menu" aria-labelledby="productsDropdownMobile">
                                             <li><a class="dropdown-item" href="products.php">All Products</a></li>
@@ -844,7 +845,7 @@ EOT;
                                             <li><a class="dropdown-item" href="sulphur-steel-manufacturer.php">Sulphur Steel</a></li>
                                             <li><a class="dropdown-item" href="tool-and-die-steel-manufacturer.php">Tool &amp; Die Steel</a></li>
                                         </ul>
-                                    </li>
+                                    </li> -->
                                     
 
 
