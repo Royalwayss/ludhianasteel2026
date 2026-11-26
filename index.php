@@ -707,9 +707,14 @@
             </div>
         </div>
 
-        <div class="mb-5">
-            <h3 class="lsrm-subheading">Carbon Steel, Alloy Steel &amp; Special Steel Grades</h3>
-            <p>Our manufacturing range covers a wide selection of engineering steel grades, including:</p>
+        <div class="lsrm-grades-wrap mb-5">
+            <div class="lsrm-grades-head">
+                <div>
+                    <h3 class="lsrm-subheading mb-1">Carbon Steel, Alloy Steel &amp; Special Steel Grades</h3>
+                    <p class="mb-0">Our manufacturing range covers a wide selection of engineering steel grades, including:</p>
+                </div>
+                <a href="products.php" class="lsrm-grades-link">All Steel Grades &rarr;</a>
+            </div>
 
             <div class="lsrm-grade-chips">
                 <span class="lsrm-grade-chip">SAE 1018</span>
@@ -735,7 +740,7 @@
                 <span class="lsrm-grade-chip">H13</span>
             </div>
 
-            <p class="mb-0">
+            <p class="lsrm-grades-note mb-0">
                 We can also discuss specific grade, chemistry, size and application requirements with customers to
                 develop the appropriate steel solution.
             </p>
